@@ -1,0 +1,24 @@
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    ><url>
+            <loc>http://example.org/categories/</loc><lastmod>2020-07-20T23:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/demo/</loc><lastmod>2020-07-20T23:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/posts/</loc><lastmod>2020-07-20T23:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/</loc><lastmod>2020-07-20T23:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/</loc><lastmod>2020-07-20T23:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/2020/07/blog-story/</loc><lastmod>2020-07-20T23:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%B3%95/</loc><lastmod>2020-07-20T23:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/categories/%E6%9D%82%E8%B0%88/</loc><lastmod>2020-07-20T23:56:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/%E7%94%A8%E8%8B%B1%E8%AF%AD%E6%80%8E%E4%B9%88%E8%AF%B4/</loc><lastmod>2020-07-19T14:17:27&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/2018/11/numbers-in-english/</loc><lastmod>2020-07-19T14:17:27&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/categories/%E8%8B%B1%E8%AF%AD/</loc><lastmod>2020-07-19T14:17:27&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/alveolar-trill/</loc><lastmod>2020-07-19T14:17:27&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/%E5%BC%B9%E8%88%8C%E9%9F%B3/</loc><lastmod>2020-07-19T14:17:27&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/%E7%BB%95%E5%8F%A3%E4%BB%A4/</loc><lastmod>2020-07-19T14:17:27&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/categories/%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AF%AD/</loc><lastmod>2020-07-19T14:17:27&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/2018/11/spanish-rr-words/</loc><lastmod>2020-07-19T14:17:27&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/%E9%BD%BF%E9%BE%88%E9%A2%A4%E9%9F%B3/</loc><lastmod>2020-07-19T14:17:27&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/tags/hardware-design/</loc><lastmod>2020-07-19T14:17:27&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/2018/11/concepts-in-hardware-design/</loc><lastmod>2020-07-19T14:17:27&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://example.org/categories/%E7%A1%AC%E4%BB%B6/</loc><lastmod>2020-07-19T14:17:27&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>

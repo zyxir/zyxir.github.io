@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>绕口令 - 标签 - Zyxiria</title>
+        <link>http://example.org/tags/%E7%BB%95%E5%8F%A3%E4%BB%A4/</link>
+        <description>绕口令 - 标签 - Zyxiria</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zyxirchen@outlook.com (Zyxir)</managingEditor>
+            <webMaster>zyxirchen@outlook.com (Zyxir)</webMaster><lastBuildDate>Wed, 07 Nov 2018 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E7%BB%95%E5%8F%A3%E4%BB%A4/" rel="self" type="application/rss+xml" /><item>
+    <title>西班牙语中的弹舌音</title>
+    <link>http://example.org/2018/11/spanish-rr-words/</link>
+    <pubDate>Wed, 07 Nov 2018 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/2018/11/spanish-rr-words/</guid>
+    <description><![CDATA[<p>西班牙语中的 rr 以及单词开头的 r 这个辅音，其发音在 IPA 中写作 [r]，名为 alveolar trill，中文名为齿龈颤音，俗称大舌音、大舌颤音、弹舌音等。许多中国人难以发出这个音。但是，只要经过训练，多数人还是可以发出这个音的。</p>]]></description>
+</item></channel>
+</rss>

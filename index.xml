@@ -1,0 +1,38 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Zyxiria</title>
+        <link>http://example.org/</link>
+        <description>Zyxir&#39;s blog of everything</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zyxirchen@outlook.com (Zyxir)</managingEditor>
+            <webMaster>zyxirchen@outlook.com (Zyxir)</webMaster><lastBuildDate>Sun, 19 Jul 2020 14:21:00 &#43;0800</lastBuildDate>
+            <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>博客之路</title>
+    <link>http://example.org/2020/07/blog-story/</link>
+    <pubDate>Sun, 19 Jul 2020 14:21:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/2020/07/blog-story/</guid>
+    <description><![CDATA[<p>距离我第一次创立作为独立网站的个人博客，已经过去了两个年头，但是直到今天，我还在折腾博客的方式，比如平台、管理方式、外观、布局等，而不是内容本身。</p>]]></description>
+</item><item>
+    <title>英文数字全知道</title>
+    <link>http://example.org/2018/11/numbers-in-english/</link>
+    <pubDate>Thu, 08 Nov 2018 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/2018/11/numbers-in-english/</guid>
+    <description><![CDATA[<p>这篇文章总结了各种数字在英文中的读法，很可能有你不会的哦！</p>]]></description>
+</item><item>
+    <title>西班牙语中的弹舌音</title>
+    <link>http://example.org/2018/11/spanish-rr-words/</link>
+    <pubDate>Wed, 07 Nov 2018 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/2018/11/spanish-rr-words/</guid>
+    <description><![CDATA[<p>西班牙语中的 rr 以及单词开头的 r 这个辅音，其发音在 IPA 中写作 [r]，名为 alveolar trill，中文名为齿龈颤音，俗称大舌音、大舌颤音、弹舌音等。许多中国人难以发出这个音。但是，只要经过训练，多数人还是可以发出这个音的。</p>]]></description>
+</item><item>
+    <title>Some Concepts in Hardware Design</title>
+    <link>http://example.org/2018/11/concepts-in-hardware-design/</link>
+    <pubDate>Sun, 04 Nov 2018 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/2018/11/concepts-in-hardware-design/</guid>
+    <description><![CDATA[Concepts source: Quora A digital design consits of several HDL files that together form a so called toplevel, and modules. A design must be verified before translated into a target hardware. The toplevel design is called the RTL code (register-transfer level code) since it can be translated by a tool into a netlist (interconnection of basic cells, like flipflops and logic gates). Next to RTL, there is behavioural code (higher-level]]></description>
+</item></channel>
+</rss>
