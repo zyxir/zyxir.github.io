@@ -4,9 +4,16 @@
         <link>http://example.org/</link>
         <description>Zyxir&#39;s blog of everything</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zyxirchen@outlook.com (Zyxir)</managingEditor>
-            <webMaster>zyxirchen@outlook.com (Zyxir)</webMaster><lastBuildDate>Tue, 21 Jul 2020 19:26:11 &#43;0800</lastBuildDate>
+            <webMaster>zyxirchen@outlook.com (Zyxir)</webMaster><lastBuildDate>Tue, 21 Jul 2020 23:05:27 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>如何在新电脑上安装 Microsoft 365</title>
+    <link>http://example.org/2020/07/install-microsoft365/</link>
+    <pubDate>Tue, 21 Jul 2020 23:05:27 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/2020/07/install-microsoft365/</guid>
+    <description><![CDATA[<p>这篇文章是写给我的母亲的，她是一个愿意接触新鲜事物的人，也是一个思维活跃、懂得变通的女性。</p>]]></description>
+</item><item>
     <title>如何在 Matlab 中启用 UTF-8 编码</title>
     <link>http://example.org/2020/07/matlab-utf8/</link>
     <pubDate>Tue, 21 Jul 2020 19:26:11 &#43;0800</pubDate>
