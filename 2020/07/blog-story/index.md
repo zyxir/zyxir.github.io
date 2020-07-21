@@ -146,7 +146,11 @@ Shortcodes 是 Hugo 用来拓展内容形式的重要方式。在 LoveIt 主题�
 
 {{< figure src="/img/profile_picture.png" alt="我的头像" title="我的头像" >}}
 
-LoveIt 主题提供了一个更棒的 shortcode，叫做 image，甚至能支持 [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js)。它的效果是这样的：
+LoveIt 主题提供了一个更棒的 shortcode，叫做 image，甚至能支持 [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js)。
+
+```Markdown
+{{</* figure src="/img/profile_picture.png" alt="我的头像" title="我的头像" */>}}
+```
 
 {{< figure src="/img/profile_picture.png" alt="我的头像" title="我的头像" >}}
 

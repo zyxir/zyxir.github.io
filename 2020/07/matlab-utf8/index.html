@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>如何在 Matlab 中启用 UTF-8 编码 - Zyxiria</title><meta name="Description" content="Zyxir&#39;s blog of everything"><meta property="og:title" content="如何在 Matlab 中启用 UTF-8 编码" />
+<meta property="og:description" content="今天遇到了 Matlab 的中文编码问题，经过查询之后发现应该有许多人遇到了这个问题，可是网上能查到的相关文章只是抛出莫名其妙的解决方案，几乎都没有任何分析。在此我详细地分析了这个问题，以及其解决方案。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/2020/07/matlab-utf8/" />
+<meta property="article:published_time" content="2020-07-21T19:26:11+08:00" />
+<meta property="article:modified_time" content="2020-07-21T23:00:13+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="如何在 Matlab 中启用 UTF-8 编码"/>
+<meta name="twitter:description" content="今天遇到了 Matlab 的中文编码问题，经过查询之后发现应该有许多人遇到了这个问题，可是网上能查到的相关文章只是抛出莫名其妙的解决方案，几乎都没有任何分析。在此我详细地分析了这个问题，以及其解决方案。"/>
+<meta name="application-name" content="Zyxiria">
+<meta name="apple-mobile-web-app-title" content="Zyxiria"><meta name="theme-color" content="#a95aec"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/2020/07/matlab-utf8/" /><link rel="prev" href="http://example.org/2020/07/blog-story/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "如何在 Matlab 中启用 UTF-8 编码",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/2020\/07\/matlab-utf8\/"
+        },"genre": "posts","keywords": "中文乱码, UTF-8, Matlab","wordcount":  1407 ,
+        "url": "http:\/\/example.org\/2020\/07\/matlab-utf8\/","datePublished": "2020-07-21T19:26:11+08:00","dateModified": "2020-07-21T23:00:13+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Zyxir"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Zyxiria">Zyxiria</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Zyxiria">Zyxiria</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">如何在 Matlab 中启用 UTF-8 编码</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="ericzhuochen.com" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Zyxir</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E5%B7%A7/"><i class="far fa-folder fa-fw"></i>软件技巧</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-21">2020-07-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1407 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#定位问题">定位问题</a></li>
+    <li><a href="#为什么应该使用-utf-8">为什么应该使用 UTF-8</a></li>
+    <li><a href="#怎么让-matlab-使用-utf-8">怎么让 Matlab 使用 UTF-8</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>今天遇到了 Matlab 的中文编码问题，经过查询之后发现应该有许多人遇到了这个问题，可是网上能查到的相关文章只是抛出莫名其妙的解决方案，几乎都没有任何分析。在此我详细地分析了这个问题，以及其解决方案。</p>
+<p>大概两三周前，我在中文 Windows 10 上的 Matlab 中打开一份之前在 Linux 上写的 Matlab 代码，发现其中的中文居然全部成了乱码，那时我以为是 Windows 和 Linux 操作系统之间字符编码的问题，就没太在意。今天，我发现我在 Visual Studio Code 中写 Matlab 代码时，<code>mlint.exe</code> 程序（即 Matlab 的自动纠错程序）给出的 Warning 信息全都是乱码；而用 Matlab 打开同一份代码，代码中的中文也变成了乱码。此时我就意识到，这个问题值得探索了。</p>
+<h2 id="定位问题">定位问题</h2>
+<p>同一个文件在同一个操作系统上的不同程序中显示出不同的面貌，说明一定是字符编码出了问题。我心里的第一个想法就是「现在不是全宇宙通用 UTF-8 编码吗？难不成是 Matlab 还在使用其它编码方式？」。在确认了 VS Code 使用的是 UTF-8 之后（VS Code 的界面右下角会显示使用的编码方式。毕竟它是文本编辑器嘛！），我就明白了，一定是 Matlab 在用什么小众的编码方式。</p>
+<p>网上很容易搜到，在 Matlab 的命令行中可以使用 <code>feature('locale')</code> 命令来查看当前的编码方式。我的结果如下：</p>
+<figure><a class="lightgallery" href="https://i.loli.net/2020/07/21/isnvfjDq4X3T6oh.png" title="feature(&lsquo;locale&rsquo;) 的输出结果" data-thumbnail="https://i.loli.net/2020/07/21/isnvfjDq4X3T6oh.png" data-sub-html="<h2>feature(&lsquo;locale&rsquo;) 的输出结果</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://i.loli.net/2020/07/21/isnvfjDq4X3T6oh.png"
+            data-srcset="https://i.loli.net/2020/07/21/isnvfjDq4X3T6oh.png, https://i.loli.net/2020/07/21/isnvfjDq4X3T6oh.png 1.5x, https://i.loli.net/2020/07/21/isnvfjDq4X3T6oh.png 2x"
+            data-sizes="auto"
+            alt="feature(&lsquo;locale&rsquo;) 的输出结果" />
+    </a><figcaption class="image-caption">feature(&lsquo;locale&rsquo;) 的输出结果</figcaption>
+    </figure>
+<p>可以看到，默认的编码方式，果然基本都是 GBK，真的是害人。我用的已经是 Matlab 的 R2019a 版本了，居然还默认使用 GBK 编码，这是多么顽固？</p>
+<h2 id="为什么应该使用-utf-8">为什么应该使用 UTF-8</h2>
+<p>由于编码问题产生的麻烦和乱码，相信你也遇到过不少。要解决这个问题的一个重要方式，就是统一地球上的所有编码方式，让尽可能所有的程序都使用某一种编码方式。这就是 Unicode 和 UTF 编码诞生的理由。Unicode 字符集几乎包含了所有可以使用计算机来显示的字符，而 UTF 系列编码则是对这一字符集的编码。UTF 编码有 UTF-8，UTF-16，UTF-32 等等，而 UTF-8 是其中最通用、占用存储空间相对较少的一种。</p>
+<p>要让乱码不再产生，要么就都让 Matlab 和 VS Code 都使用 UTF-8，要么就让 Matlab 和 VS Code 都使用 GBK。但是 GBK 是专用于中文的编码方式，并不通用，让程序强制使用 GBK，可能会解决一个问题，却带来更多问题。从长远看，&ldquo;everything UTF-8&rdquo; 才是好的解决方案。</p>
+<h2 id="怎么让-matlab-使用-utf-8">怎么让 Matlab 使用 UTF-8</h2>
+<p>如果你搜索 Matlab 的文档，文档会告诉你，使用 <code>slCharacterEncoding()</code> 函数来设置字符编码，那就试试它。</p>
+<p>如果不带参数地运行这一函数，会显示</p>
+<figure><a class="lightgallery" href="https://i.loli.net/2020/07/21/cSfHXaWwQipDsBR.png" title="slCharacterEncoding() 的输出结果" data-thumbnail="https://i.loli.net/2020/07/21/cSfHXaWwQipDsBR.png" data-sub-html="<h2>输出结果</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://i.loli.net/2020/07/21/cSfHXaWwQipDsBR.png"
+            data-srcset="https://i.loli.net/2020/07/21/cSfHXaWwQipDsBR.png, https://i.loli.net/2020/07/21/cSfHXaWwQipDsBR.png 1.5x, https://i.loli.net/2020/07/21/cSfHXaWwQipDsBR.png 2x"
+            data-sizes="auto"
+            alt="slCharacterEncoding() 的输出结果" />
+    </a><figcaption class="image-caption">输出结果</figcaption>
+    </figure>
+<p>果然是 GBK。那我把它改掉呢？但是事实是，<strong>改不掉</strong>。即使输入 <code>slCharacterEncoding('UTF-8')</code> 之后，在输入 <code>slCharacterEncoding()</code> 的结果已经变成了 &lsquo;UTF-8&rsquo;，文件还是会乱码。哪怕重启 Matlab，也会乱码。所以说，官方文档没用。</p>
+<p>真正解决问题的是网上的另外一些文章，虽然它们都没说为什么，但是我大概能理解为什么那么做。首先，打开 Matlab 安装目录下的 <code>bin</code> 目录，对我来说，这个目录的路径是</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">D:\Program Files\MATLAB\R2019a\bin
+</code></pre></td></tr></table>
+</div>
+</div><p>在此目录下，会有两个文件，<code>lcdata.xml</code> 和 <code>lcdata_utf8.xml</code>。其中 <code>lcdata.xml</code> 决定了 Matlab 的编码方式，而 <code>lcdata_utf8.xml</code> 似乎是一个不生效，但是专门用来替代 <code>lcdata.xml</code> 的文件。</p>
+<p>首先，把 <code>lcdata.xml</code> 重命名为 <code>lcdata_old.xml</code>，即把它备份一份，防止以后要用到。</p>
+<p>然后，把 <code>lcdata_utf8.xml</code> 复制一份，就叫做 <code>lcdata.xml</code>，并且打开它，作出一些改动。首先要删掉关于 GBK 的这一部分：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;encoding</span> <span class="na">name=</span><span class="s">&#34;GBK&#39;&gt;
+</span><span class="s">    &lt;encoding_alias name=&#34;</span><span class="err">936&#34;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/encoding&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>然后，改动一下关于 UTF-8 的部分，高亮的那一行是新加入的内容：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="hl"><span class="lnt">3
+</span></span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;encoding</span> <span class="na">name=</span><span class="s">&#34;UTF-8&#34;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;encoding_alias</span> <span class="na">name=</span><span class="s">&#34;utf8&#34;</span><span class="nt">/&gt;</span>
+<span class="hl">    <span class="nt">&lt;encoding_alias</span> <span class="na">name=</span><span class="s">&#34;GBK&#34;</span><span class="nt">/&gt;</span> 
+</span><span class="nt">&lt;/encoding&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>这么做的目的就是，将 GBK 编码从一种独立的编码方式，改成了 UTF-8 的一个别名，从而欺骗 Matlab，让它使用 UTF-8。<strong>虽然很不优雅，但是真的有用。</strong></p>
+<p>重启 Matlab 之后，乱码的中文应该就不再乱码了。</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2020-07-21&nbsp;<a class="git-hash" href="https://github.com/zyxir/blog/commit/3d8483304efd87cca80ef7b57a43eb174e955c8d" target="_blank" title="commit by Eric Zhuo Chen(zyxirchen@outlook.com) 3d8483304efd87cca80ef7b57a43eb174e955c8d: finished">
+                                    <i class="fas fa-hashtag fa-fw"></i>3d84833</a></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2020/07/matlab-utf8/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/2020/07/matlab-utf8/" data-title="如何在 Matlab 中启用 UTF-8 编码" data-via="https://twitter.com/ZyxirChen" data-hashtags="中文乱码,UTF-8,Matlab"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/2020/07/matlab-utf8/" data-hashtag="中文乱码"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="http://example.org/2020/07/matlab-utf8/" data-title="如何在 Matlab 中启用 UTF-8 编码" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://example.org/2020/07/matlab-utf8/" data-title="如何在 Matlab 中启用 UTF-8 编码"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/2020/07/matlab-utf8/" data-title="如何在 Matlab 中启用 UTF-8 编码" data-ralateuid="http://weibo.com/u/5754108207"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Myspace" data-sharer="myspace" data-url="http://example.org/2020/07/matlab-utf8/" data-title="如何在 Matlab 中启用 UTF-8 编码" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="分享到 Blogger" data-sharer="blogger" data-url="http://example.org/2020/07/matlab-utf8/" data-title="如何在 Matlab 中启用 UTF-8 编码" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="http://example.org/2020/07/matlab-utf8/" data-title="如何在 Matlab 中启用 UTF-8 编码"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/">中文乱码</a>,&nbsp;<a href="/tags/utf-8/">UTF-8</a>,&nbsp;<a href="/tags/matlab/">Matlab</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2020/07/blog-story/" class="prev" rel="prev" title="博客之路"><i class="fas fa-angle-left fa-fw"></i>博客之路</a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.74.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="ericzhuochen.com" target="_blank">Zyxir</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA-4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
