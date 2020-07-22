@@ -11,12 +11,5 @@
     <author>作者</author>
     <guid>http://example.org/2020/07/install-microsoft365/</guid>
     <description><![CDATA[<p>这篇文章是写给我的母亲的，她是一个愿意接触新鲜事物的人，也是一个思维活跃、懂得变通的女性。</p>]]></description>
-</item><item>
-    <title>如何在 Matlab 中启用 UTF-8 编码</title>
-    <link>http://example.org/2020/07/matlab-utf8/</link>
-    <pubDate>Tue, 21 Jul 2020 19:26:11 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>http://example.org/2020/07/matlab-utf8/</guid>
-    <description><![CDATA[<p>今天遇到了 Matlab 的中文编码问题，经过查询之后发现应该有许多人遇到了这个问题，可是网上能查到的相关文章只是抛出莫名其妙的解决方案，几乎都没有任何分析。在此我详细地分析了这个问题，以及其解决方案。</p>]]></description>
 </item></channel>
 </rss>

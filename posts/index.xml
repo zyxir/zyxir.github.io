@@ -26,6 +26,13 @@
     <guid>http://example.org/2020/07/blog-story/</guid>
     <description><![CDATA[<p>距离我第一次创立作为独立网站的个人博客，已经过去了两个年头，但是直到今天，我还在折腾博客的方式，比如平台、管理方式、外观、布局等，而不是内容本身。</p>]]></description>
 </item><item>
+    <title>Ideal Emacs Configuration</title>
+    <link>http://example.org/2018/11/ideal-emacs-configuration/</link>
+    <pubDate>Sun, 18 Nov 2018 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/2018/11/ideal-emacs-configuration/</guid>
+    <description><![CDATA[<p>本文是我在目前阶段对于理想的 Emacs 配置的一些观点。</p>]]></description>
+</item><item>
     <title>英文数字全知道</title>
     <link>http://example.org/2018/11/numbers-in-english/</link>
     <pubDate>Thu, 08 Nov 2018 00:00:00 &#43;0000</pubDate>

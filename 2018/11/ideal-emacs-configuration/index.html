@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Ideal Emacs Configuration - Zyxiria</title><meta name="Description" content="Zyxir&#39;s blog of everything"><meta property="og:title" content="Ideal Emacs Configuration" />
+<meta property="og:description" content="本文是我在目前阶段对于理想的 Emacs 配置的一些观点。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/2018/11/ideal-emacs-configuration/" />
+<meta property="article:published_time" content="2018-11-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-22T21:56:17+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ideal Emacs Configuration"/>
+<meta name="twitter:description" content="本文是我在目前阶段对于理想的 Emacs 配置的一些观点。"/>
+<meta name="application-name" content="Zyxiria">
+<meta name="apple-mobile-web-app-title" content="Zyxiria"><meta name="theme-color" content="#a95aec"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/2018/11/ideal-emacs-configuration/" /><link rel="prev" href="http://example.org/2018/11/numbers-in-english/" /><link rel="next" href="http://example.org/2020/07/blog-story/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Ideal Emacs Configuration",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/2018\/11\/ideal-emacs-configuration\/"
+        },"genre": "posts","keywords": "Emacs, 文本编辑器","wordcount":  2652 ,
+        "url": "http:\/\/example.org\/2018\/11\/ideal-emacs-configuration\/","datePublished": "2018-11-18T00:00:00+00:00","dateModified": "2020-07-22T21:56:17+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Zyxir"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Zyxiria">Zyxiria</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Zyxiria">Zyxiria</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Ideal Emacs Configuration</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="ericzhuochen.com" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Zyxir</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"><i class="far fa-folder fa-fw"></i>软件工具</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2018-11-18">2018-11-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2652 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 6 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#理想的-emacs-工作流">理想的 Emacs 工作流</a></li>
+    <li><a href="#键位设置问题">键位设置问题</a></li>
+    <li><a href="#org-mode-在工作流中的作用">Org-Mode 在工作流中的作用</a></li>
+    <li><a href="#兼容性">兼容性</a></li>
+    <li><a href="#插件选择">插件选择</a></li>
+    <li><a href="#坚持-emacs">坚持 Emacs</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>本文是我在目前阶段对于理想的 Emacs 配置的一些观点。</p>
+<blockquote>
+<p>重新审视于 2020-07-22：这是接近前年的我写的文字。那个时候我的问题（现在也存在这个问题）就是想得太多，做得太少。现在我想得比那个时候更现实了一些、少了几分浪漫主义，能够做到的，也比那个时候要多了一些。现在文本编辑器对我来说，更多地是一个工具，而不是玩具了，所以我现在主要使用 Visual Studio Code。但是 Emacs 也会一直承载着我的回忆，我也不会彻底放弃折腾它的。</p>
+</blockquote>
+<p>什么是理想的 Emacs 配置？理想的 Emacs 配置就是目前我希望 Emacs 能够被配置达到的最佳状态，最适合我自己的状态。我曾有过配置 Vim 的经验，但我觉得配置 Vim 和配置 Emacs 是不太一样的两个过程。配置 Vim ，是在配置一个与终端融为一体的、高效的源代码编辑环境，同时也不断增强它的文档编辑能力，这个过程中，提高各方面的编辑体验、增添方便编辑代码的各种 feature （如增添插件来完善括号编辑功能、自动补全功能、对齐功能等等），并加入大量自定义键位（以 Leader 键前缀为主）来提高编辑效率。而配置 Emacs 呢？ Emacs 本身的编辑能力比 Vim 要强，许多功能不需要插件就已经原生支持（如显示与删除 trailing whitespaces ，书签，将区域转化为注释，等等），但其编辑效率默认没有 Vim 高，可以通过 Evil 这种插件来实现 Vim 的按键方案；配置 Emacs ，绝不仅仅是在配置它的文本编辑功能，因为 Emacs 还有原生的文件管理功能、终端模拟功能、网页浏览功能、邮件管理功能，更重要地， Emacs 还有一个无所不能的 Org-Mode 。更甚之的是，使用 Emacs Lisp ，你可以实现更多想得到的和想不到的功能。我并不是说 Vim 并做不到这些东西， Vim 并不原生支持它们，就算经过详细地配置，用来做文件管理、网页浏览等也十分拙劣，配置 Vim 的本质总是离不开“文本编辑器”这一点，而配置 Emacs 这个话题通常更加宽泛，强化它的文本编辑功能只是其中的一个方面。因此，理想的 Emacs 配置，和理想的 Vim 配置是不同的，甚至可以讲，理想的 Emacs 配置，是可以包括理想的 Vim 配置的（通过 Evil 系列插件模拟 Vim 按键）。</p>
+<h2 id="理想的-emacs-工作流">理想的 Emacs 工作流</h2>
+<p>在 GNU/Linux 上，我通过 Super+A 的组合键打开 Emacs ，打开后就很少关闭，这和使用 Vim 的工作流程就很不同（ Vim 只在终端中使用，常开常关，与终端操作融为一体）。如果是在 Windows 上，且不说改变 Windows 默认的快捷键能否做到， Windows 平台对于 Emacs 的支持也是存在一些短板的（比如难配置的环境变量，许多插件不支持），因此下文只讨论在 GNU/Linux 系统或 Macintosh 系统上的工作流。</p>
+<p>关于 Emacs 理想工作流的讨论主要在于，到底应该让自己的工作流 以操作系统为中心 ，还是 以 Emacs 为中心 ？</p>
+<p>以操作系统为中心就是指，在操作系统中定义一系列键位（我是 Super 加各个键）来开启常用应用程序，包括 Emacs ，然后常开的应用程序是 Emacs ，浏览器和终端。在完成工作时，该用什么应用程序就用什么应用程序， Emacs 只是其中一个。</p>
+<p>以 Emacs 为中心就是指，让 Emacs 变得非常全能，以至于能开启大多数工作流中要用到的文件格式。操作系统应该让出一些键位（比如 Alt+Tab, Menu, Super+? 等键），使得 Emacs 可以定义它们。当遇到 Emacs 无法胜任的任务时（比如复杂的网页浏览，影音播放），就通过 Emacs 内定义的命令和键位，开启外部程序作为子进程来完成。</p>
+<p>我个人更赞同后一种方式，因为它更加 hackable ，可以做到真正的随心所欲。而将自己的工作流集中到一个强大、可定制的应用程序，也可以变得更加高效、更加契合自己的工作特点。</p>
+<h2 id="键位设置问题">键位设置问题</h2>
+<p>如果工作流以 Emacs 为中心，那么就会在 Emacs 中定义一系列用于操作外部程序的拓展键位，比如开启浏览器的键位，开启电路设计软件的键位，开启博客服务器的键位。由于 Emacs 的强大性，以写程序的方式定义和管理这些快捷键，比在操作系统中设置它们更加方便。如果将它们全部以 C-c 作为前缀，光难按不说，还很容易冲突。如果将各个 Emacs 没有占用的键位尽数利用，那会非常难以记忆。最好能够提供一些新的未使用前缀，用统一的前缀来管理自定义的一些模块、功能。</p>
+<p>我认为最好的前缀是 Super 键。这里就需要设置一下操作系统了，把以 Super 键开头的快捷键都设置得偏一点，这样 Emacs 就可以设置它们了。在 Emacs 中， Super 组合键以 H+? 的形式呈现。</p>
+<p>其次就是未使用的 F5 ~ F8 等功能键，但是它们离键盘中心太远，不适合作为常用快捷键。可以设置为一些冷门键位，比如开启录屏、截图等等。</p>
+<p>键位设置这个问题，可以好好 拜读 一下 Bozhidar Bastov 的 prelude 配置，这是一套加强 Emacs 默认体验的配置，设置了非常多十分合理的默认键位。 Bozhidar Bastov 是一位杰出的 Geek ，他为 Emacs 的发展做出了杰出的贡献，他高水准的文章、插件和配置也十分值得我们拜读。</p>
+<p>我不是非常喜欢 Spacemacs ，准确来讲我不喜欢这种大幅度修改原有编辑器体验、默认增添大量功能，甚至改变原有编辑器配置方式的额外配置，甚至连太过花哨的 modeline 我都不太喜欢，尽管我是 Spacemacs 主题的坚定用户。但是在键位设置这个方面， Spacemacs 应该是有可以学习之处的。</p>
+<p>我先在进行的编程工作不是特别多，如果我以后开始集中编程了，我可能会怀念 Vim 的高效键位方案，可能会使用 Evil 。这时就可以参考 Spacvim 的高效利用 Leader 键的键位方案了。</p>
+<h2 id="org-mode-在工作流中的作用">Org-Mode 在工作流中的作用</h2>
+<p>Org-Mode 这个工具解决了我很多方面的工具需求，如 GTD 、文档撰写、写博客、知识管理、收集小想法、做计划、番茄工作法等等，它真的是个很好的日常应用，应该被整合到工作流中。但我目前还没有彻底掌握 Org-Mode ，因此此处无法发表太多见解。总之，设计许多 capture 模板，并将 Org-Capture 整合到工作流中，一定不是坏事。</p>
+<h2 id="兼容性">兼容性</h2>
+<p>我希望 Emacs 可以在各种环境之下运行，包括但不限于 Windows 、 GNU/Linux 、 Macintosh 下的 GUI 模式，终端模式。如果要实现彻底的兼容性，那么配置文件中就必须兼顾各个操作系统，要做一定的针对性配置。这一点上，我可以从陈斌、Steve Purcell等大牛的配置中学到很多。</p>
+<h2 id="插件选择">插件选择</h2>
+<p>我无法容忍事情超出我的控制，也不能忍受 Emacs 中运行一大堆我不熟悉，甚至都不知道的插件，所以增添新插件必须是经过考虑而做出的决策。 Emacs 中运行的插件必须少而精，简单的功能就自己写 Emacs Lisp 脚本实现，没有用到的插件必须定期删除。插件应该可以分为如下几类：</p>
+<ol>
+<li>作为其它插件的库的插件，自己的存在感很低。例如 dash, popup 等。</li>
+<li>为 Emacs 提供某项额外功能的插件，如 company 提供自动补全， yasnippet 提供代码片段。</li>
+<li>强化已有功能的插件，如 smex 提高输命令效率， dired+ 强化文件管理功能。</li>
+</ol>
+<h2 id="坚持-emacs">坚持 Emacs</h2>
+<p>Emacs 固然小众，但它必然小众，也不会过时。不是每个人都喜欢完全可定制化的东西，也不是每个人都喜欢花大量时间学习新事物，更不是每个人都能忍受 Emacs Lisp 的怪异语法。大部分人就算使用 Visual Studio Code ，可能也没有真正学习它，并没有达到很高的效率。只要我潜心钻研和发掘 Emacs ，是可以用它达到很高的工作效率的。 Emacs 也在不断成长，每个新版本都在添加新的、更新奇的功能。</p>
+<p>据说 Atom 编辑器和 Emacs 一样极其具有可拓展性，甚至更加强大。但是 Atom 尚还年轻，也有一些遭到诟病的问题。所以在 Atom 被证明比 Emacs 更好之前，或者下一款具有更高自由度的编辑器出现之前，我都应该坚持 Emacs 。</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2020-07-22&nbsp;<a class="git-hash" href="https://github.com/zyxir/blog/commit/5b251490eb1a5e52802422c18c1b89422009f81e" target="_blank" title="commit by Eric Zhuo Chen(zyxirchen@outlook.com) 5b251490eb1a5e52802422c18c1b89422009f81e: an old post collected">
+                                    <i class="fas fa-hashtag fa-fw"></i>5b25149</a></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2018/11/ideal-emacs-configuration/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/2018/11/ideal-emacs-configuration/" data-title="Ideal Emacs Configuration" data-via="https://twitter.com/ZyxirChen" data-hashtags="Emacs,文本编辑器"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/2018/11/ideal-emacs-configuration/" data-hashtag="Emacs"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="http://example.org/2018/11/ideal-emacs-configuration/" data-title="Ideal Emacs Configuration" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://example.org/2018/11/ideal-emacs-configuration/" data-title="Ideal Emacs Configuration"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/2018/11/ideal-emacs-configuration/" data-title="Ideal Emacs Configuration" data-ralateuid="http://weibo.com/u/5754108207"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Myspace" data-sharer="myspace" data-url="http://example.org/2018/11/ideal-emacs-configuration/" data-title="Ideal Emacs Configuration" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="分享到 Blogger" data-sharer="blogger" data-url="http://example.org/2018/11/ideal-emacs-configuration/" data-title="Ideal Emacs Configuration" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="http://example.org/2018/11/ideal-emacs-configuration/" data-title="Ideal Emacs Configuration"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/emacs/">Emacs</a>,&nbsp;<a href="/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/">文本编辑器</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2018/11/numbers-in-english/" class="prev" rel="prev" title="英文数字全知道"><i class="fas fa-angle-left fa-fw"></i>英文数字全知道</a>
+            <a href="/2020/07/blog-story/" class="next" rel="next" title="博客之路">博客之路<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.74.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="ericzhuochen.com" target="_blank">Zyxir</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA-4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
