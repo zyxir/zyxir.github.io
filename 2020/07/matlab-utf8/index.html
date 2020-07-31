@@ -10,7 +10,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://example.org/2020/07/matlab-utf8/" />
 <meta property="article:published_time" content="2020-07-21T19:26:11+08:00" />
-<meta property="article:modified_time" content="2020-07-22T21:56:31+08:00" />
+<meta property="article:modified_time" content="2020-07-27T22:58:34+08:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="如何在 Matlab 中启用 UTF-8 编码"/>
 <meta name="twitter:description" content="今天遇到了 Matlab 的中文编码问题，经过查询之后发现应该有许多人遇到了这个问题，可是网上能查到的相关文章只是抛出莫名其妙的解决方案，几乎都没有任何分析。在此我详细地分析了这个问题，以及其解决方案。"/>
@@ -26,8 +26,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/example.org\/2020\/07\/matlab-utf8\/"
-        },"genre": "posts","keywords": "中文乱码, UTF-8, Matlab","wordcount":  1407 ,
-        "url": "http:\/\/example.org\/2020\/07\/matlab-utf8\/","datePublished": "2020-07-21T19:26:11+08:00","dateModified": "2020-07-22T21:56:31+08:00","publisher": {
+        },"genre": "posts","keywords": "中文乱码, UTF-8, Matlab","wordcount":  1743 ,
+        "url": "http:\/\/example.org\/2020\/07\/matlab-utf8\/","datePublished": "2020-07-21T19:26:11+08:00","dateModified": "2020-07-27T22:58:34+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -43,7 +43,7 @@
             <a href="/" title="Zyxiria">Zyxiria</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
                             <i class="fas fa-search fa-fw"></i>
@@ -86,7 +86,7 @@
                     <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
                         取消
                     </a>
-                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -103,8 +103,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">如何在 Matlab 中启用 UTF-8 编码</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="ericzhuochen.com" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Zyxir</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"><i class="far fa-folder fa-fw"></i>软件工具</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-21">2020-07-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1407 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-21">2020-07-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1743 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
@@ -115,6 +115,7 @@
     <li><a href="#定位问题">定位问题</a></li>
     <li><a href="#为什么应该使用-utf-8">为什么应该使用 UTF-8</a></li>
     <li><a href="#怎么让-matlab-使用-utf-8">怎么让 Matlab 使用 UTF-8</a></li>
+    <li><a href="#一点吐槽">一点吐槽</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><p>今天遇到了 Matlab 的中文编码问题，经过查询之后发现应该有许多人遇到了这个问题，可是网上能查到的相关文章只是抛出莫名其妙的解决方案，几乎都没有任何分析。在此我详细地分析了这个问题，以及其解决方案。</p>
@@ -190,12 +191,17 @@
 </code></pre></td></tr></table>
 </div>
 </div><p>这么做的目的就是，将 GBK 编码从一种独立的编码方式，改成了 UTF-8 的一个别名，从而欺骗 Matlab，让它使用 UTF-8。<strong>虽然很不优雅，但是真的有用。</strong></p>
-<p>重启 Matlab 之后，乱码的中文应该就不再乱码了。</p></div><div class="post-footer" id="post-footer">
+<p>重启 Matlab 之后，乱码的中文应该就不再乱码了。</p>
+<h2 id="一点吐槽">一点吐槽</h2>
+<p>在写下这篇文章之后，关于 Matlab 编码问题的折腾还没有结束，因为当我使用 VS Code 编写 Matlab 程序时，<code>mlint.exe</code> 程序仍然输出乱码，错误信息也没法用。</p>
+<p>不可能选择屈从于 GBK 编码，否则哪天我在 Linux 上看 Matlab 程序又没法看了。GBK 绝对是一个已经过时了的、没有前途的、故步自封的编码选择。</p>
+<p>我现在想尝试的是，使用第三方编辑器（例如 VS Code，我更看好 Emacs）来编写 Matlab 源文件，存储为 UTF-8 格式，使用 <code>mlint.exe</code> 进行代码检查，并且使用集成的 Matlab Terminal 进行即时的运行。这就做好比是把 VS Code（或者 Emacs）变成了 Matlab 的第三方客户端。</p>
+<p>既然有 Matlab，为什么还要用第三方客户端？还不是因为 Matlab 太令人不满意了。一个付费商用科学计算软件，不能改字体和主题，编码方式写死在代码里，编程规则各种特立独行，真的让人很难喜欢起来。</p></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2020-07-22&nbsp;<a class="git-hash" href="https://github.com/zyxir/blog/commit/48da1c0dd6ddfc473563d24caa54a55fc707ea16" target="_blank" title="commit by Eric Zhuo Chen(zyxirchen@outlook.com) 48da1c0dd6ddfc473563d24caa54a55fc707ea16: category modified">
-                                    <i class="fas fa-hashtag fa-fw"></i>48da1c0</a></span>
+                <span>更新于 2020-07-27&nbsp;<a class="git-hash" href="https://github.com/zyxir/blog/commit/c2730d14637a3aec1e15ab63862c72fc923ac387" target="_blank" title="commit by Eric Zhuo Chen(zyxirchen@outlook.com) c2730d14637a3aec1e15ab63862c72fc923ac387: add the last section">
+                                    <i class="fas fa-hashtag fa-fw"></i>c2730d1</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -221,7 +227,7 @@
 </div>
 <div id="comments"></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.74.2">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.74.3">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="ericzhuochen.com" target="_blank">Zyxir</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA-4.0</a></span></div>
         </div>
     </footer></div>
