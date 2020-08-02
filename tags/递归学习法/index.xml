@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>递归学习法 - 标签 - Zyxiria</title>
+        <link>http://example.org/tags/%E9%80%92%E5%BD%92%E5%AD%A6%E4%B9%A0%E6%B3%95/</link>
+        <description>递归学习法 - 标签 - Zyxiria</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zyxirchen@outlook.com (Zyxir)</managingEditor>
+            <webMaster>zyxirchen@outlook.com (Zyxir)</webMaster><lastBuildDate>Thu, 12 Jul 2018 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://example.org/tags/%E9%80%92%E5%BD%92%E5%AD%A6%E4%B9%A0%E6%B3%95/" rel="self" type="application/rss+xml" /><item>
+    <title>系统学习，拾遗学习，递归学习</title>
+    <link>http://example.org/2018/07/xitong-xuexi-shiyi-xuexi-digui-xuexi/</link>
+    <pubDate>Thu, 12 Jul 2018 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/2018/07/xitong-xuexi-shiyi-xuexi-digui-xuexi/</guid>
+    <description><![CDATA[<p>本文谈及了我对于几种学习方法的看法。</p>]]></description>
+</item></channel>
+</rss>

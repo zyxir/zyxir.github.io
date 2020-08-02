@@ -53,5 +53,12 @@
     <author>作者</author>
     <guid>http://example.org/2018/11/concepts-in-hardware-design/</guid>
     <description><![CDATA[Concepts source: Quora A digital design consits of several HDL files that together form a so called toplevel, and modules. A design must be verified before translated into a target hardware. The toplevel design is called the RTL code (register-transfer level code) since it can be translated by a tool into a netlist (interconnection of basic cells, like flipflops and logic gates). Next to RTL, there is behavioural code (higher-level]]></description>
+</item><item>
+    <title>系统学习，拾遗学习，递归学习</title>
+    <link>http://example.org/2018/07/xitong-xuexi-shiyi-xuexi-digui-xuexi/</link>
+    <pubDate>Thu, 12 Jul 2018 00:00:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/2018/07/xitong-xuexi-shiyi-xuexi-digui-xuexi/</guid>
+    <description><![CDATA[<p>本文谈及了我对于几种学习方法的看法。</p>]]></description>
 </item></channel>
 </rss>
