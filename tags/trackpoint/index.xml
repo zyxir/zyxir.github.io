@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>TrackPoint - 标签 - Zyxiria</title>
+        <link>http://example.org/tags/trackpoint/</link>
+        <description>TrackPoint - 标签 - Zyxiria</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zyxirchen@outlook.com (Zyxir)</managingEditor>
+            <webMaster>zyxirchen@outlook.com (Zyxir)</webMaster><lastBuildDate>Mon, 03 Aug 2020 14:22:53 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/trackpoint/" rel="self" type="application/rss+xml" /><item>
+    <title>实际体验第二代小红点键盘</title>
+    <link>http://example.org/2020/08/thinkpad-keyboard-ii/</link>
+    <pubDate>Mon, 03 Aug 2020 14:22:53 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/2020/08/thinkpad-keyboard-ii/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://i.loli.net/2020/08/05/Tp9XjFWQOEUf7IJ.jpg" referrerpolicy="no-referrer">
+            </div><p>联想 ThinkPad 出品的第二代小红点键盘已经问世有几个月了，但是由于它的小众性，网上能够找到的测评并不多。作为一个粉丝，我实际买了一块回来使用。到目前为止，体验还是很不错的。</p>]]></description>
+</item></channel>
+</rss>
