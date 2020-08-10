@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>如何在 Matlab 中启用 UTF-8 编码 - Zyxiria</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Zyxir" /><meta name="description" content="今天遇到了 Matlab 的中文编码问题，经过查询之后发现应该有许多人遇到了这个问题，可是网上能查到的相关文章只是抛出莫名其妙的解决方案，几乎都没有任何分析。在此我详细地分析了这个问题，以及其解决方案。
+" /><meta name="keywords" content="Zyxir, blog, Zyxiria" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.74.3 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/matlab-utf8/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.0034ec37b35f91907849c9020141a7e99249c6f2301ee1e34aee09cfe5f9ae2e.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="如何在 Matlab 中启用 UTF-8 编码" />
+<meta property="og:description" content="今天遇到了 Matlab 的中文编码问题，经过查询之后发现应该有许多人遇到了这个问题，可是网上能查到的相关文章只是抛出莫名其妙的解决方案，几乎都没有任何分析。在此我详细地分析了这个问题，以及其解决方案。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/matlab-utf8/" />
+<meta property="article:published_time" content="2020-07-21T19:26:11+08:00" />
+<meta property="article:modified_time" content="2020-08-10T23:45:51+08:00" />
+<meta itemprop="name" content="如何在 Matlab 中启用 UTF-8 编码">
+<meta itemprop="description" content="今天遇到了 Matlab 的中文编码问题，经过查询之后发现应该有许多人遇到了这个问题，可是网上能查到的相关文章只是抛出莫名其妙的解决方案，几乎都没有任何分析。在此我详细地分析了这个问题，以及其解决方案。">
+<meta itemprop="datePublished" content="2020-07-21T19:26:11+08:00" />
+<meta itemprop="dateModified" content="2020-08-10T23:45:51+08:00" />
+<meta itemprop="wordCount" content="1731">
+
+
+
+<meta itemprop="keywords" content="中文乱码,UTF-8,Matlab," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="如何在 Matlab 中启用 UTF-8 编码"/>
+<meta name="twitter:description" content="今天遇到了 Matlab 的中文编码问题，经过查询之后发现应该有许多人遇到了这个问题，可是网上能查到的相关文章只是抛出莫名其妙的解决方案，几乎都没有任何分析。在此我详细地分析了这个问题，以及其解决方案。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Zyxiria</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Zyxiria</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">如何在 Matlab 中启用 UTF-8 编码</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-07-21 </span>
+        <div class="post-category">
+            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/"> 软件工具 </a>
+            </div>
+          <span class="more-meta"> 约 1731 字 </span>
+          <span class="more-meta"> 预计阅读 4 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#定位问题">定位问题</a></li>
+        <li><a href="#为什么应该使用-utf-8">为什么应该使用 UTF-8</a></li>
+        <li><a href="#怎么让-matlab-使用-utf-8">怎么让 Matlab 使用 UTF-8</a></li>
+        <li><a href="#一点吐槽">一点吐槽</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>今天遇到了 Matlab 的中文编码问题，经过查询之后发现应该有许多人遇到了这个问题，可是网上能查到的相关文章只是抛出莫名其妙的解决方案，几乎都没有任何分析。在此我详细地分析了这个问题，以及其解决方案。</p>
+<p>大概两三周前，我在中文 Windows 10 上的 Matlab 中打开一份之前在 Linux 上写的 Matlab 代码，发现其中的中文居然全部成了乱码，那时我以为是 Windows 和 Linux 操作系统之间字符编码的问题，就没太在意。今天，我发现我在 Visual Studio Code 中写 Matlab 代码时，<code>mlint.exe</code> 程序（即 Matlab 的自动纠错程序）给出的 Warning 信息全都是乱码；而用 Matlab 打开同一份代码，代码中的中文也变成了乱码。此时我就意识到，这个问题值得探索了。</p>
+<h2 id="定位问题">定位问题</h2>
+<p>同一个文件在同一个操作系统上的不同程序中显示出不同的面貌，说明一定是字符编码出了问题。我心里的第一个想法就是「现在不是全宇宙通用 UTF-8 编码吗？难不成是 Matlab 还在使用其它编码方式？」。在确认了 VS Code 使用的是 UTF-8 之后（VS Code 的界面右下角会显示使用的编码方式。毕竟它是文本编辑器嘛！），我就明白了，一定是 Matlab 在用什么小众的编码方式。</p>
+<p>网上很容易搜到，在 Matlab 的命令行中可以使用 <code>feature('locale')</code> 命令来查看当前的编码方式。我的结果如下：</p>
+<figure>
+    <img src="https://i.loli.net/2020/07/21/isnvfjDq4X3T6oh.png"
+         alt="feature(&#39;locale&#39;) 的输出结果"/> <figcaption>
+            <p>feature(&lsquo;locale&rsquo;) 的输出结果</p>
+        </figcaption>
+</figure>
+
+<p>可以看到，默认的编码方式，果然基本都是 GBK，真的是害人。我用的已经是 Matlab 的 R2019a 版本了，居然还默认使用 GBK 编码，这是多么顽固？</p>
+<h2 id="为什么应该使用-utf-8">为什么应该使用 UTF-8</h2>
+<p>由于编码问题产生的麻烦和乱码，相信你也遇到过不少。要解决这个问题的一个重要方式，就是统一地球上的所有编码方式，让尽可能所有的程序都使用某一种编码方式。这就是 Unicode 和 UTF 编码诞生的理由。Unicode 字符集几乎包含了所有可以使用计算机来显示的字符，而 UTF 系列编码则是对这一字符集的编码。UTF 编码有 UTF-8，UTF-16，UTF-32 等等，而 UTF-8 是其中最通用、占用存储空间相对较少的一种。</p>
+<p>要让乱码不再产生，要么就都让 Matlab 和 VS Code 都使用 UTF-8，要么就让 Matlab 和 VS Code 都使用 GBK。但是 GBK 是专用于中文的编码方式，并不通用，让程序强制使用 GBK，可能会解决一个问题，却带来更多问题。从长远看，&ldquo;everything UTF-8&rdquo; 才是好的解决方案。</p>
+<h2 id="怎么让-matlab-使用-utf-8">怎么让 Matlab 使用 UTF-8</h2>
+<p>如果你搜索 Matlab 的文档，文档会告诉你，使用 <code>slCharacterEncoding()</code> 函数来设置字符编码，那就试试它。</p>
+<p>如果不带参数地运行这一函数，会显示</p>
+<figure>
+    <img src="https://i.loli.net/2020/07/21/cSfHXaWwQipDsBR.png"
+         alt="slCharacterEncoding() 的输出结果"/> <figcaption>
+            <p>输出结果</p>
+        </figcaption>
+</figure>
+
+<p>果然是 GBK。那我把它改掉呢？但是事实是，<strong>改不掉</strong>。即使输入 <code>slCharacterEncoding('UTF-8')</code> 之后，在输入 <code>slCharacterEncoding()</code> 的结果已经变成了 &lsquo;UTF-8&rsquo;，文件还是会乱码。哪怕重启 Matlab，也会乱码。所以说，官方文档没用。</p>
+<p>真正解决问题的是网上的另外一些文章，虽然它们都没说为什么，但是我大概能理解为什么那么做。首先，打开 Matlab 安装目录下的 <code>bin</code> 目录，对我来说，这个目录的路径是</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">D:\Program Files\MATLAB\R2019a\bin
+</code></pre></td></tr></table>
+</div>
+</div><p>在此目录下，会有两个文件，<code>lcdata.xml</code> 和 <code>lcdata_utf8.xml</code>。其中 <code>lcdata.xml</code> 决定了 Matlab 的编码方式，而 <code>lcdata_utf8.xml</code> 似乎是一个不生效，但是专门用来替代 <code>lcdata.xml</code> 的文件。</p>
+<p>首先，把 <code>lcdata.xml</code> 重命名为 <code>lcdata_old.xml</code>，即把它备份一份，防止以后要用到。</p>
+<p>然后，把 <code>lcdata_utf8.xml</code> 复制一份，就叫做 <code>lcdata.xml</code>，并且打开它，作出一些改动。首先要删掉关于 GBK 的这一部分：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;encoding</span> <span class="na">name=</span><span class="s">&#34;GBK&#39;&gt;
+</span><span class="s">    &lt;encoding_alias name=&#34;</span><span class="err">936&#34;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/encoding&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>然后，改动一下关于 UTF-8 的部分，高亮的那一行是新加入的内容：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="hl"><span class="lnt">3
+</span></span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;encoding</span> <span class="na">name=</span><span class="s">&#34;UTF-8&#34;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;encoding_alias</span> <span class="na">name=</span><span class="s">&#34;utf8&#34;</span><span class="nt">/&gt;</span>
+<span class="hl">    <span class="nt">&lt;encoding_alias</span> <span class="na">name=</span><span class="s">&#34;GBK&#34;</span><span class="nt">/&gt;</span> 
+</span><span class="nt">&lt;/encoding&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>这么做的目的就是，将 GBK 编码从一种独立的编码方式，改成了 UTF-8 的一个别名，从而欺骗 Matlab，让它使用 UTF-8。<strong>虽然很不优雅，但是真的有用。</strong></p>
+<p>重启 Matlab 之后，乱码的中文应该就不再乱码了。</p>
+<h2 id="一点吐槽">一点吐槽</h2>
+<p>在写下这篇文章之后，关于 Matlab 编码问题的折腾还没有结束，因为当我使用 VS Code 编写 Matlab 程序时，<code>mlint.exe</code> 程序仍然输出乱码，错误信息也没法用。</p>
+<p>不可能选择屈从于 GBK 编码，否则哪天我在 Linux 上看 Matlab 程序又没法看了。GBK 绝对是一个已经过时了的、没有前途的、故步自封的编码选择。</p>
+<p>我现在想尝试的是，使用第三方编辑器（例如 VS Code，我更看好 Emacs）来编写 Matlab 源文件，存储为 UTF-8 格式，使用 <code>mlint.exe</code> 进行代码检查，并且使用集成的 Matlab Terminal 进行即时的运行。这就做好比是把 VS Code（或者 Emacs）变成了 Matlab 的第三方客户端。</p>
+<p>既然有 Matlab，为什么还要用第三方客户端？还不是因为 Matlab 太令人不满意了。一个付费商用科学计算软件，不能改字体和主题，编码方式写死在代码里，编程规则各种特立独行，真的让人很难喜欢起来。</p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Zyxir</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-08-10
+        <a href="https://github.com/zyxir/zyxir.github.io/commit/29d2d2b30ec911da18d8f652e122e1699749ba73" title="change posts to post">(29d2d2b)</a>
+    </span>
+  </p>
+  <p class="copyright-item">
+      <span class="item-title">原始文档</span>
+      <span class="item-content"><a class="link-to-markdown" href="http://localhost:1313/post/matlab-utf8/index.md" target="_blank">查看本文 Markdown 版本 »</a></span>
+    </p>
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0（知识共享署名-相同方式共享 4.0 国际许可协议）</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/">中文乱码</a>
+          <a href="/tags/utf-8/">UTF-8</a>
+          <a href="/tags/matlab/">Matlab</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/install-microsoft365/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">如何在新电脑上安装 Microsoft 365</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/blog-story/">
+            <span class="next-text nav-default">博客之路</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'xfI1LVbg7IsL1FID93j2fuJe-gzGzoHsz',
+        appKey: 'rNDYlHxuWjbSHyUT8X9cCNsk',
+        notify:  true ,
+        verify:  false ,
+        avatar:'mm',
+        placeholder: '说点什么吧...',
+        visitor:  false 
+    });
+  </script>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:zyxirchen@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://twitter.com/@ZyxirChen" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://github.com/zyxir" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/u/5754108207" class="iconfont icon-weibo" title="weibo"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Zyxir</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js" integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js" integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin="anonymous"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "zh-cn".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-151679109-2', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>
