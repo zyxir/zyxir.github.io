@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>alveolar trill on Zyxiria</title>
-    <link>http://localhost:1313/tags/alveolar-trill/</link>
+    <link>http://blog.ericzhuochen.com/tags/alveolar-trill/</link>
     <description>Recent content in alveolar trill on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 07 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/alveolar-trill/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.ericzhuochen.com/tags/alveolar-trill/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>西班牙语中的弹舌音</title>
-      <link>http://localhost:1313/post/spanish-rr-words/</link>
+      <link>http://blog.ericzhuochen.com/post/spanish-rr-words/</link>
       <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/spanish-rr-words/</guid>
+      <guid>http://blog.ericzhuochen.com/post/spanish-rr-words/</guid>
       <description>&lt;p&gt;西班牙语中的 rr 以及单词开头的 r 这个辅音，其发音在 IPA 中写作 [r]，名为 alveolar trill，中文名为齿龈颤音，俗称大舌音、大舌颤音、弹舌音等。许多中国人难以发出这个音。但是，只要经过训练，多数人还是可以发出这个音的。&lt;/p&gt;</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>教程 on Zyxiria</title>
-    <link>http://localhost:1313/categories/%E6%95%99%E7%A8%8B/</link>
+    <link>http://blog.ericzhuochen.com/categories/%E6%95%99%E7%A8%8B/</link>
     <description>Recent content in 教程 on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 21 Jul 2020 23:05:27 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.ericzhuochen.com/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>如何在新电脑上安装 Microsoft 365</title>
-      <link>http://localhost:1313/post/install-microsoft365/</link>
+      <link>http://blog.ericzhuochen.com/post/install-microsoft365/</link>
       <pubDate>Tue, 21 Jul 2020 23:05:27 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/install-microsoft365/</guid>
+      <guid>http://blog.ericzhuochen.com/post/install-microsoft365/</guid>
       <description>&lt;p&gt;这篇文章是写给我的母亲的，她是一个愿意接触新鲜事物的人，也是一个思维活跃、懂得变通的女性。&lt;/p&gt;</description>
     </item>
     

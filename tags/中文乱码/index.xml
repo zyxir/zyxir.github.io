@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>中文乱码 on Zyxiria</title>
-    <link>http://localhost:1313/tags/%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</link>
+    <link>http://blog.ericzhuochen.com/tags/%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</link>
     <description>Recent content in 中文乱码 on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 21 Jul 2020 19:26:11 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.ericzhuochen.com/tags/%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>如何在 Matlab 中启用 UTF-8 编码</title>
-      <link>http://localhost:1313/post/matlab-utf8/</link>
+      <link>http://blog.ericzhuochen.com/post/matlab-utf8/</link>
       <pubDate>Tue, 21 Jul 2020 19:26:11 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/matlab-utf8/</guid>
+      <guid>http://blog.ericzhuochen.com/post/matlab-utf8/</guid>
       <description>&lt;p&gt;今天遇到了 Matlab 的中文编码问题，经过查询之后发现应该有许多人遇到了这个问题，可是网上能查到的相关文章只是抛出莫名其妙的解决方案，几乎都没有任何分析。在此我详细地分析了这个问题，以及其解决方案。&lt;/p&gt;</description>
     </item>
     

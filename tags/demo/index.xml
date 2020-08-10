@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>demo on Zyxiria</title>
-    <link>http://localhost:1313/tags/demo/</link>
+    <link>http://blog.ericzhuochen.com/tags/demo/</link>
     <description>Recent content in demo on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 19 Jul 2020 14:21:00 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/demo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.ericzhuochen.com/tags/demo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>博客之路</title>
-      <link>http://localhost:1313/post/blog-story/</link>
+      <link>http://blog.ericzhuochen.com/post/blog-story/</link>
       <pubDate>Sun, 19 Jul 2020 14:21:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/blog-story/</guid>
+      <guid>http://blog.ericzhuochen.com/post/blog-story/</guid>
       <description>&lt;p&gt;距离我第一次创立作为独立网站的个人博客，已经过去了两个年头，但是直到今天，我还在折腾博客的方式，比如平台、管理方式、外观、布局等，而不是内容本身。&lt;/p&gt;</description>
     </item>
     

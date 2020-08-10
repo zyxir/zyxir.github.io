@@ -1,288 +1,288 @@
-<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="http://blog.ericzhuochen.com/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/links/</loc>
-    <lastmod>2020-08-06T00:16:57+08:00</lastmod>
+    <loc>http://blog.ericzhuochen.com/links/</loc>
+    <lastmod>2020-08-11T01:10:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://blog.ericzhuochen.com/categories/</loc>
     <lastmod>2020-08-11T00:43:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>http://blog.ericzhuochen.com/post/</loc>
     <lastmod>2020-08-11T00:43:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/</loc>
     <lastmod>2020-08-11T00:43:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/thinkpad/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/thinkpad/</loc>
     <lastmod>2020-08-11T00:43:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://blog.ericzhuochen.com/</loc>
     <lastmod>2020-08-11T00:43:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E4%BA%A7%E5%93%81%E6%B5%8B%E8%AF%84/</loc>
+    <loc>http://blog.ericzhuochen.com/categories/%E4%BA%A7%E5%93%81%E6%B5%8B%E8%AF%84/</loc>
     <lastmod>2020-08-11T00:43:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/thinkpad-keyboard-ii/</loc>
+    <loc>http://blog.ericzhuochen.com/post/thinkpad-keyboard-ii/</loc>
     <lastmod>2020-08-11T00:43:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E5%B0%8F%E7%BA%A2%E7%82%B9/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/%E5%B0%8F%E7%BA%A2%E7%82%B9/</loc>
     <lastmod>2020-08-11T00:43:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E9%94%AE%E7%9B%98/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/%E9%94%AE%E7%9B%98/</loc>
     <lastmod>2020-08-11T00:43:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://blog.ericzhuochen.com/about/</loc>
     <lastmod>2020-07-31T16:05:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/microsoft-365/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/microsoft-365/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/install-microsoft365/</loc>
+    <loc>http://blog.ericzhuochen.com/post/install-microsoft365/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>http://blog.ericzhuochen.com/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/matlab/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/matlab/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/utf-8/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/utf-8/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/matlab-utf8/</loc>
+    <loc>http://blog.ericzhuochen.com/post/matlab-utf8/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/</loc>
+    <loc>http://blog.ericzhuochen.com/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/demo/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/demo/</loc>
     <lastmod>2020-08-11T00:02:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/blog-story/</loc>
+    <loc>http://blog.ericzhuochen.com/post/blog-story/</loc>
     <lastmod>2020-08-11T00:02:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%B3%95/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2020-08-11T00:02:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E6%9D%82%E8%B0%88/</loc>
+    <loc>http://blog.ericzhuochen.com/categories/%E6%9D%82%E8%B0%88/</loc>
     <lastmod>2020-08-11T00:02:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/emacs/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/emacs/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/ideal-emacs-configuration/</loc>
+    <loc>http://blog.ericzhuochen.com/post/ideal-emacs-configuration/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E7%94%A8%E8%8B%B1%E8%AF%AD%E6%80%8E%E4%B9%88%E8%AF%B4/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/%E7%94%A8%E8%8B%B1%E8%AF%AD%E6%80%8E%E4%B9%88%E8%AF%B4/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/numbers-in-english/</loc>
+    <loc>http://blog.ericzhuochen.com/post/numbers-in-english/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E8%8B%B1%E8%AF%AD/</loc>
+    <loc>http://blog.ericzhuochen.com/categories/%E8%8B%B1%E8%AF%AD/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/alveolar-trill/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/alveolar-trill/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E5%BC%B9%E8%88%8C%E9%9F%B3/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/%E5%BC%B9%E8%88%8C%E9%9F%B3/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E7%BB%95%E5%8F%A3%E4%BB%A4/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/%E7%BB%95%E5%8F%A3%E4%BB%A4/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AF%AD/</loc>
+    <loc>http://blog.ericzhuochen.com/categories/%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AF%AD/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/spanish-rr-words/</loc>
+    <loc>http://blog.ericzhuochen.com/post/spanish-rr-words/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E9%BD%BF%E9%BE%88%E9%A2%A4%E9%9F%B3/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/%E9%BD%BF%E9%BE%88%E9%A2%A4%E9%9F%B3/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/hardware-design/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/hardware-design/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/concepts-in-hardware-design/</loc>
+    <loc>http://blog.ericzhuochen.com/post/concepts-in-hardware-design/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E7%A1%AC%E4%BB%B6/</loc>
+    <loc>http://blog.ericzhuochen.com/categories/%E7%A1%AC%E4%BB%B6/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/xitong-xuexi-shiyi-xuexi-digui-xuexi/</loc>
+    <loc>http://blog.ericzhuochen.com/post/xitong-xuexi-shiyi-xuexi-digui-xuexi/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E9%80%92%E5%BD%92%E5%AD%A6%E4%B9%A0%E6%B3%95/</loc>
+    <loc>http://blog.ericzhuochen.com/tags/%E9%80%92%E5%BD%92%E5%AD%A6%E4%B9%A0%E6%B3%95/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

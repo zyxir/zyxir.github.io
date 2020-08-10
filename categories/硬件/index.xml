@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>硬件 on Zyxiria</title>
-    <link>http://localhost:1313/categories/%E7%A1%AC%E4%BB%B6/</link>
+    <link>http://blog.ericzhuochen.com/categories/%E7%A1%AC%E4%BB%B6/</link>
     <description>Recent content in 硬件 on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 04 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/%E7%A1%AC%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.ericzhuochen.com/categories/%E7%A1%AC%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Some Concepts in Hardware Design</title>
-      <link>http://localhost:1313/post/concepts-in-hardware-design/</link>
+      <link>http://blog.ericzhuochen.com/post/concepts-in-hardware-design/</link>
       <pubDate>Sun, 04 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/concepts-in-hardware-design/</guid>
+      <guid>http://blog.ericzhuochen.com/post/concepts-in-hardware-design/</guid>
       <description>Concepts source: Quora A digital design consits of several HDL files that together form a so called toplevel, and modules. A design must be verified before translated into a target hardware. The toplevel design is called the RTL code (register-transfer level code) since it can be translated by a tool into a netlist (interconnection of basic cells, like flipflops and logic gates). Next to RTL, there is behavioural code (higher-level</description>
     </item>
     

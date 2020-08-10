@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Zyxiria</title>
-    <link>http://localhost:1313/post/</link>
+    <link>http://blog.ericzhuochen.com/post/</link>
     <description>Recent content in Posts on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 03 Aug 2020 14:22:53 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.ericzhuochen.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>实际体验第二代小红点键盘</title>
-      <link>http://localhost:1313/post/thinkpad-keyboard-ii/</link>
+      <link>http://blog.ericzhuochen.com/post/thinkpad-keyboard-ii/</link>
       <pubDate>Mon, 03 Aug 2020 14:22:53 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/thinkpad-keyboard-ii/</guid>
+      <guid>http://blog.ericzhuochen.com/post/thinkpad-keyboard-ii/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/08/05/Tp9XjFWQOEUf7IJ.jpg&#34; alt=&#34;键盘外观&#34;&gt;&lt;/p&gt;
 &lt;p&gt;联想 ThinkPad 出品的第二代小红点键盘已经问世有几个月了，但是由于它的小众性，网上能够找到的测评并不多。作为一个粉丝，我实际买了一块回来使用。到目前为止，体验还是很不错的。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>如何在新电脑上安装 Microsoft 365</title>
-      <link>http://localhost:1313/post/install-microsoft365/</link>
+      <link>http://blog.ericzhuochen.com/post/install-microsoft365/</link>
       <pubDate>Tue, 21 Jul 2020 23:05:27 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/install-microsoft365/</guid>
+      <guid>http://blog.ericzhuochen.com/post/install-microsoft365/</guid>
       <description>&lt;p&gt;这篇文章是写给我的母亲的，她是一个愿意接触新鲜事物的人，也是一个思维活跃、懂得变通的女性。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>如何在 Matlab 中启用 UTF-8 编码</title>
-      <link>http://localhost:1313/post/matlab-utf8/</link>
+      <link>http://blog.ericzhuochen.com/post/matlab-utf8/</link>
       <pubDate>Tue, 21 Jul 2020 19:26:11 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/matlab-utf8/</guid>
+      <guid>http://blog.ericzhuochen.com/post/matlab-utf8/</guid>
       <description>&lt;p&gt;今天遇到了 Matlab 的中文编码问题，经过查询之后发现应该有许多人遇到了这个问题，可是网上能查到的相关文章只是抛出莫名其妙的解决方案，几乎都没有任何分析。在此我详细地分析了这个问题，以及其解决方案。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>博客之路</title>
-      <link>http://localhost:1313/post/blog-story/</link>
+      <link>http://blog.ericzhuochen.com/post/blog-story/</link>
       <pubDate>Sun, 19 Jul 2020 14:21:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/blog-story/</guid>
+      <guid>http://blog.ericzhuochen.com/post/blog-story/</guid>
       <description>&lt;p&gt;距离我第一次创立作为独立网站的个人博客，已经过去了两个年头，但是直到今天，我还在折腾博客的方式，比如平台、管理方式、外观、布局等，而不是内容本身。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Ideal Emacs Configuration</title>
-      <link>http://localhost:1313/post/ideal-emacs-configuration/</link>
+      <link>http://blog.ericzhuochen.com/post/ideal-emacs-configuration/</link>
       <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ideal-emacs-configuration/</guid>
+      <guid>http://blog.ericzhuochen.com/post/ideal-emacs-configuration/</guid>
       <description>&lt;p&gt;本文是我在目前阶段对于理想的 Emacs 配置的一些观点。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>英文数字全知道</title>
-      <link>http://localhost:1313/post/numbers-in-english/</link>
+      <link>http://blog.ericzhuochen.com/post/numbers-in-english/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/numbers-in-english/</guid>
+      <guid>http://blog.ericzhuochen.com/post/numbers-in-english/</guid>
       <description>&lt;p&gt;这篇文章总结了各种数字在英文中的读法，很可能有你不会的哦！&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>西班牙语中的弹舌音</title>
-      <link>http://localhost:1313/post/spanish-rr-words/</link>
+      <link>http://blog.ericzhuochen.com/post/spanish-rr-words/</link>
       <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/spanish-rr-words/</guid>
+      <guid>http://blog.ericzhuochen.com/post/spanish-rr-words/</guid>
       <description>&lt;p&gt;西班牙语中的 rr 以及单词开头的 r 这个辅音，其发音在 IPA 中写作 [r]，名为 alveolar trill，中文名为齿龈颤音，俗称大舌音、大舌颤音、弹舌音等。许多中国人难以发出这个音。但是，只要经过训练，多数人还是可以发出这个音的。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Some Concepts in Hardware Design</title>
-      <link>http://localhost:1313/post/concepts-in-hardware-design/</link>
+      <link>http://blog.ericzhuochen.com/post/concepts-in-hardware-design/</link>
       <pubDate>Sun, 04 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/concepts-in-hardware-design/</guid>
+      <guid>http://blog.ericzhuochen.com/post/concepts-in-hardware-design/</guid>
       <description>Concepts source: Quora A digital design consits of several HDL files that together form a so called toplevel, and modules. A design must be verified before translated into a target hardware. The toplevel design is called the RTL code (register-transfer level code) since it can be translated by a tool into a netlist (interconnection of basic cells, like flipflops and logic gates). Next to RTL, there is behavioural code (higher-level</description>
     </item>
     
     <item>
       <title>系统学习，拾遗学习，递归学习</title>
-      <link>http://localhost:1313/post/xitong-xuexi-shiyi-xuexi-digui-xuexi/</link>
+      <link>http://blog.ericzhuochen.com/post/xitong-xuexi-shiyi-xuexi-digui-xuexi/</link>
       <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/xitong-xuexi-shiyi-xuexi-digui-xuexi/</guid>
+      <guid>http://blog.ericzhuochen.com/post/xitong-xuexi-shiyi-xuexi-digui-xuexi/</guid>
       <description>&lt;p&gt;本文谈及了我对于几种学习方法的看法。&lt;/p&gt;</description>
     </item>
     

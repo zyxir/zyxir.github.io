@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习方法 on Zyxiria</title>
-    <link>http://localhost:1313/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</link>
+    <link>http://blog.ericzhuochen.com/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</link>
     <description>Recent content in 学习方法 on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 12 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.ericzhuochen.com/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>系统学习，拾遗学习，递归学习</title>
-      <link>http://localhost:1313/post/xitong-xuexi-shiyi-xuexi-digui-xuexi/</link>
+      <link>http://blog.ericzhuochen.com/post/xitong-xuexi-shiyi-xuexi-digui-xuexi/</link>
       <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/xitong-xuexi-shiyi-xuexi-digui-xuexi/</guid>
+      <guid>http://blog.ericzhuochen.com/post/xitong-xuexi-shiyi-xuexi-digui-xuexi/</guid>
       <description>&lt;p&gt;本文谈及了我对于几种学习方法的看法。&lt;/p&gt;</description>
     </item>
     
