@@ -17,7 +17,8 @@
 - [x] `2020=08-06` 完善评论系统。
 - [ ] ~~创建 Gitee Pages 镜像。~~（放弃，Gitee Pages 弄不起来，能力不足）
 - [x] 完成关于我、友情链接之类的辅助性页面。
-- [ ] **网站正式上线**，取代原本的 [blog.ericzhuochen.com](https://blog.ericzhuochen.com/)。
+- [ ] 加入页脚导航栏
+- [x] **网站正式上线**，取代原本的 [blog.ericzhuochen.com](https://blog.ericzhuochen.com/)。
 - [ ] 加入邮件订阅功能。
 - [ ] 在一些平台中推广我的新博客。
 
