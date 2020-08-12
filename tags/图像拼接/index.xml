@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>图像拼接 on Zyxiria</title>
+    <link>http://blog.ericzhuochen.com/tags/%E5%9B%BE%E5%83%8F%E6%8B%BC%E6%8E%A5/</link>
+    <description>Recent content in 图像拼接 on Zyxiria</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 11 Aug 2020 14:19:17 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.ericzhuochen.com/tags/%E5%9B%BE%E5%83%8F%E6%8B%BC%E6%8E%A5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>图像拼接技术</title>
+      <link>http://blog.ericzhuochen.com/post/image-mosaicing/</link>
+      <pubDate>Tue, 11 Aug 2020 14:19:17 +0800</pubDate>
+      
+      <guid>http://blog.ericzhuochen.com/post/image-mosaicing/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;图像拼接（image mosaicing）&lt;strong&gt;技术，是指将数张&lt;/strong&gt;有重叠部分&lt;/strong&gt;的图像拼成一幅大型的无缝高分辨率图像的技术。普通的摄像器械只能拍摄有限视角、 有限范围内的景象，要想获得较大范围的全景图，就需要用到图像拼接技术。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
