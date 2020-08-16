@@ -3,56 +3,77 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/categories/</loc>
-    <lastmod>2020-08-13T00:02:10+08:00</lastmod>
+    <lastmod>2020-08-16T21:33:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/</loc>
-    <lastmod>2020-08-13T00:02:10+08:00</lastmod>
+    <lastmod>2020-08-16T21:33:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/</loc>
-    <lastmod>2020-08-13T00:02:10+08:00</lastmod>
+    <lastmod>2020-08-16T21:33:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/</loc>
-    <lastmod>2020-08-13T00:02:10+08:00</lastmod>
+    <lastmod>2020-08-16T21:33:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/categories/%E6%9D%82%E8%B0%88/</loc>
+    <lastmod>2020-08-16T21:33:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/</loc>
+    <lastmod>2020-08-16T21:33:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/post/meet-minimalism/</loc>
+    <lastmod>2020-08-16T21:33:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/%E5%9B%BE%E5%83%8F%E6%8B%BC%E6%8E%A5/</loc>
-    <lastmod>2020-08-13T00:02:10+08:00</lastmod>
+    <lastmod>2020-08-14T00:07:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/image-mosaicing/</loc>
-    <lastmod>2020-08-13T00:02:10+08:00</lastmod>
+    <lastmod>2020-08-14T00:07:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2020-08-13T00:02:10+08:00</lastmod>
+    <lastmod>2020-08-14T00:07:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2020-08-13T00:02:10+08:00</lastmod>
+    <lastmod>2020-08-14T00:07:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -178,13 +199,6 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/%E5%8D%9A%E5%AE%A2%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2020-08-11T14:15:20+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ericzhuochen.com/categories/%E6%9D%82%E8%B0%88/</loc>
     <lastmod>2020-08-11T14:15:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
