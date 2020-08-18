@@ -79,13 +79,6 @@
   </url>
   
   <url>
-    <loc>http://blog.ericzhuochen.com/links/</loc>
-    <lastmod>2020-08-12T00:47:51+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.ericzhuochen.com/tags/thinkpad/</loc>
     <lastmod>2020-08-11T00:43:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -122,7 +115,7 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/about/</loc>
-    <lastmod>2020-07-31T16:05:20+08:00</lastmod>
+    <lastmod>2020-08-18T22:43:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

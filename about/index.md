@@ -15,6 +15,14 @@
 
 你可以在首页我的头像下找到我的联系方式或其它社交帐号。
 
+## 其它页面
+
+- [时光的碎片](https://zyxir.github.io/memories/) - 愿平淡的生活中感动长存
+
+## 友情链接
+
+- [罗伯特梁的网站](https://www.robertliang.club/) - 一个主要关于 FPGA 硬件设计和计算机知识的学习博客。
+
 ## 版权声明
 
 除了另外说明的内容外，本站的所有内容均采用[知识共享署名-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-sa/4.0/)进行许可。
