@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ericzhuochen.com/abilities/</loc>
+    <lastmod>2020-08-24T05:44:35+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/pages/</loc>
+    <lastmod>2020-08-24T05:44:35+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.ericzhuochen.com/categories/</loc>
     <lastmod>2020-08-16T21:33:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -115,7 +129,7 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/about/</loc>
-    <lastmod>2020-08-18T22:43:35+08:00</lastmod>
+    <lastmod>2020-08-24T05:44:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
