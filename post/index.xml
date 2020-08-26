@@ -6,10 +6,23 @@
     <description>Recent content in Posts on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 16 Aug 2020 14:00:06 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2020 01:38:44 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.ericzhuochen.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>安卓应用极简化 v1.0</title>
+      <link>http://blog.ericzhuochen.com/post/minimal-android-1.0/</link>
+      <pubDate>Fri, 21 Aug 2020 01:38:44 +0800</pubDate>
+      
+      <guid>http://blog.ericzhuochen.com/post/minimal-android-1.0/</guid>
+      <description>&lt;figure&gt;
+    &lt;img src=&#34;https://i.loli.net/2020/08/21/2koXI3zcaN5vGUg.jpg&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;在之前的文章&lt;a href=&#34;https://blog.ericzhuochen.com/post/meet-minimalism/&#34;&gt;认识极简主义&lt;/a&gt;中，我提出了自己的极简主义计划，其中很重要的一条就是「App 极简」。在这篇文章里，我用文字的方式，总结我以往的使用习惯与频率，总结出了若干应该保留的手机 App。这么做能够减少被手机浪费的时间，简化信息来源，提高生活质量。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>认识极简主义</title>

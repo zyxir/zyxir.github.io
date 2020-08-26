@@ -17,42 +17,56 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/categories/</loc>
-    <lastmod>2020-08-26T02:28:32+08:00</lastmod>
+    <lastmod>2020-08-26T23:12:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/</loc>
-    <lastmod>2020-08-26T02:28:32+08:00</lastmod>
+    <lastmod>2020-08-26T23:12:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/</loc>
-    <lastmod>2020-08-26T02:28:32+08:00</lastmod>
+    <lastmod>2020-08-26T23:12:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/</loc>
-    <lastmod>2020-08-26T02:28:32+08:00</lastmod>
+    <lastmod>2020-08-26T23:12:18+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/post/minimal-android-1.0/</loc>
+    <lastmod>2020-08-26T23:12:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/categories/%E6%9D%82%E8%B0%88/</loc>
-    <lastmod>2020-08-16T21:33:23+08:00</lastmod>
+    <lastmod>2020-08-26T23:12:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/</loc>
-    <lastmod>2020-08-16T21:33:23+08:00</lastmod>
+    <lastmod>2020-08-26T23:12:18+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-08-26T23:12:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -178,13 +192,6 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/matlab-utf8/</loc>
-    <lastmod>2020-08-10T23:45:51+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ericzhuochen.com/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2020-08-10T23:45:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
