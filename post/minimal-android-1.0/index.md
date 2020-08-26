@@ -169,6 +169,4 @@ Office Lens 是微软出品的手机扫描仪，可以方便地扫描纸上的�
 
 ## 跳舞的线
 
-![image.png](https://i.loli.net/2020/08/26/r6Id4JbYQFunZcB.png)
-
 我最喜欢的手机游戏。沉浸式的体验。
