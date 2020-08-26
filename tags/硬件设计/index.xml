@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>硬件设计 on Zyxiria</title>
+    <link>http://blog.ericzhuochen.com/tags/%E7%A1%AC%E4%BB%B6%E8%AE%BE%E8%AE%A1/</link>
+    <description>Recent content in 硬件设计 on Zyxiria</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 04 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.ericzhuochen.com/tags/%E7%A1%AC%E4%BB%B6%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Some Concepts in Hardware Design</title>
+      <link>http://blog.ericzhuochen.com/post/concepts-in-hardware-design/</link>
+      <pubDate>Sun, 04 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.ericzhuochen.com/post/concepts-in-hardware-design/</guid>
+      <description>Concepts source: Quora A digital design consits of several HDL files that together form a so called toplevel, and modules. A design must be verified before translated into a target hardware. The toplevel design is called the RTL code (register-transfer level code) since it can be translated by a tool into a netlist (interconnection of basic cells, like flipflops and logic gates). Next to RTL, there is behavioural code (higher-level</description>
+    </item>
+    
+  </channel>
+</rss>
