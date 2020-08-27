@@ -20,8 +20,6 @@ Registration 有许多种不同的方式，有**基于空间域**的，也有**�
 
 {{< figure src="https://i.loli.net/2020/08/12/2sIb6BZfN4mAVLg.png" title="按照 registration 分类的图像拼接" >}}
 
-### Image Blending
-
 Blending 也有许多不同的方式。按照 blending 方式的不同可以将 mosaicing 分成这些类：
 
 {{< figure src="https://i.loli.net/2020/08/12/B4ISy8OArsYkuzp.png" title="按照 blending 分类的图像拼接" >}}
