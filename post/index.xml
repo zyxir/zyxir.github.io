@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 28 Aug 2020 20:25:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2020 11:11:29 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.ericzhuochen.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>关于串行通信的调研</title>
+      <link>http://blog.ericzhuochen.com/post/serial-communication/</link>
+      <pubDate>Sat, 29 Aug 2020 11:11:29 +0800</pubDate>
+      
+      <guid>http://blog.ericzhuochen.com/post/serial-communication/</guid>
+      <description>&lt;p&gt;最近的工作涉及到了一些串行通信的知识，了解到了有关 SerDes（Serializer/Deserializer，串行器/解串器）和 MGT（Multi-gigabit transceiver，数 G 比特的收发器）的许多知识，发现这块知识非常有趣，并且涉及到了许多有用的名词，于是进行了一些稍微深入的了解、调研。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>EDC Keyring v1.0</title>
