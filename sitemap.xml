@@ -3,7 +3,7 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/categories/</loc>
-    <lastmod>2020-09-02T13:09:09+08:00</lastmod>
+    <lastmod>2020-09-02T13:12:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -17,7 +17,7 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/</loc>
-    <lastmod>2020-09-02T13:09:09+08:00</lastmod>
+    <lastmod>2020-09-02T13:12:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -31,14 +31,14 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/</loc>
-    <lastmod>2020-09-02T13:09:09+08:00</lastmod>
+    <lastmod>2020-09-02T13:12:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/</loc>
-    <lastmod>2020-09-02T13:09:09+08:00</lastmod>
+    <lastmod>2020-09-02T13:12:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -136,28 +136,28 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/%E5%9B%BE%E5%83%8F%E6%8B%BC%E6%8E%A5/</loc>
-    <lastmod>2020-08-27T14:53:59+08:00</lastmod>
+    <lastmod>2020-09-02T13:12:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/image-mosaicing/</loc>
-    <lastmod>2020-08-27T14:53:59+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ericzhuochen.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2020-08-27T14:53:59+08:00</lastmod>
+    <lastmod>2020-09-02T13:12:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2020-08-27T14:53:59+08:00</lastmod>
+    <lastmod>2020-09-02T13:12:20+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3/</loc>
+    <lastmod>2020-09-02T13:12:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -353,21 +353,14 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/concepts-in-hardware-design/</loc>
-    <lastmod>2020-08-26T02:28:32+08:00</lastmod>
+    <lastmod>2020-09-02T13:12:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.ericzhuochen.com/categories/%E7%A1%AC%E4%BB%B6/</loc>
-    <lastmod>2020-08-26T02:28:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ericzhuochen.com/tags/%E7%A1%AC%E4%BB%B6%E8%AE%BE%E8%AE%A1/</loc>
-    <lastmod>2020-08-26T02:28:32+08:00</lastmod>
+    <loc>http://blog.ericzhuochen.com/categories/%E7%A1%AC%E4%BB%B6%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2020-09-02T13:12:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
