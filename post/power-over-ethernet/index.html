@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Power Over Ethernet 笔记 - Zyxiria</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Zyxir" /><meta name="description" content="Power over ethernet，即 PoE，是一种使用网线供电的技术。有了这项技术，可以通过一根网线为设备同时供电和传输数据。
+" /><meta name="keywords" content="Zyxir, blog, Zyxiria" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.74.3 with theme even" />
+
+
+<link rel="canonical" href="http://blog.ericzhuochen.com/post/power-over-ethernet/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.0034ec37b35f91907849c9020141a7e99249c6f2301ee1e34aee09cfe5f9ae2e.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Power Over Ethernet 笔记" />
+<meta property="og:description" content="
+Power over ethernet，即 PoE，是一种使用网线供电的技术。有了这项技术，可以通过一根网线为设备同时供电和传输数据。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.ericzhuochen.com/post/power-over-ethernet/" />
+<meta property="article:published_time" content="2020-09-02T10:04:21+08:00" />
+<meta property="article:modified_time" content="2020-09-02T13:09:09+08:00" />
+<meta itemprop="name" content="Power Over Ethernet 笔记">
+<meta itemprop="description" content="
+Power over ethernet，即 PoE，是一种使用网线供电的技术。有了这项技术，可以通过一根网线为设备同时供电和传输数据。">
+<meta itemprop="datePublished" content="2020-09-02T10:04:21+08:00" />
+<meta itemprop="dateModified" content="2020-09-02T13:09:09+08:00" />
+<meta itemprop="wordCount" content="1455">
+
+
+
+<meta itemprop="keywords" content="PoE," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Power Over Ethernet 笔记"/>
+<meta name="twitter:description" content="
+Power over ethernet，即 PoE，是一种使用网线供电的技术。有了这项技术，可以通过一根网线为设备同时供电和传输数据。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Zyxiria</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/pages/">
+        <li class="mobile-menu-item">其它页面</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Zyxiria</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pages/">其它页面</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Power Over Ethernet 笔记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-09-02 </span>
+        <div class="post-category">
+            <a href="/categories/%E7%94%B5%E5%AD%90%E7%94%B5%E6%B0%94%E4%B8%8E%E9%80%9A%E4%BF%A1/"> 电子、电气与通信 </a>
+            </div>
+          <span class="more-meta"> 约 1455 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#功能与优点">功能与优点</a></li>
+            <li><a href="#原理">原理</a></li>
+            <li><a href="#版本与供电能力">版本与供电能力</a></li>
+            <li><a href="#三种传输模式1">三种传输模式</a></li>
+            <li><a href="#使用现状">使用现状</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p><img src="/1a88345c-908c-4ffb-9ca0-fd0d46895968.jpg" alt=""></p>
+<p>Power over ethernet，即 PoE，是一种使用网线供电的技术。有了这项技术，可以通过一根网线为设备同时供电和传输数据。</p>
+<h3 id="功能与优点">功能与优点</h3>
+<p>PoE 的供电设备被称为 <strong>PSE（power sourcing equipment）</strong>，受电设备被称为 <strong>PD（powered device）</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。其中 PSE 可以是交换机，也可以是非 PoE 交换机搭配 PoE 供电模块；常见的 PD 包括 VoIP 电话、无线接入点和 IP 摄像头等<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>。</p>
+<p>PoE 的优点<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>有：</p>
+<ul>
+<li>安装方便、布线简单，只需要一根网线即可，即使在没有电源插座的房间中，也能为 PD 供电。</li>
+<li>安全可靠。和 USB 充电一样，PoE 在设备接通前会有「握手」测试，确保二者兼容。同时，PoE 也具备对于断电等突发情况的保护措施。</li>
+</ul>
+<h3 id="原理">原理</h3>
+<p>这张图表明了 PoE 的原理<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>。</p>
+<figure>
+    <img src="/1b235464-1239-4caa-88d8-2c7c9a285a9a.png"/> <figcaption>
+            <h4>PoE 的原理框图</h4>
+        </figcaption>
+</figure>
+
+<p>为什么 PoE 能使用数据线来供电？因为以太网传送数据的方式是使用一对线传输<strong>差分信号</strong>，而 PoE 是在此基础上，在这一对线上传输<strong>共模直流电压</strong>。这样，对微小噪声敏感的数据部分体现在差模电压上，能够可靠地被传输和解析；对噪声不敏感的能量部分体现在共模电压上，经过一定损耗传输到受电设备，两全其美。</p>
+<h3 id="版本与供电能力">版本与供电能力</h3>
+<p>目前 PoE 一共有三个版本的标准，定义了四个供电等级。</p>
+<ul>
+<li>IEEE 802.3af 定义了 Type 1 的供电等级，PSE 能提供 15.40W 的功率，距离交换机 100 米能提供 12.95W 功率，被称为「PoE」。</li>
+<li>IEEE 802.3at 定义了 Type 2 的供电等级，PSE 能提供 30.0W 的功率，距离交换机 100 米能提供 25.50W 功率，被称为「PoE+」。而前一个版本也因为它而被称为「IEEE 802.3at Type 1」。</li>
+<li>IEEE 802.3bt 定义了 Type 3 和 Type 4 的供电等级，前者 PSE 能提供 60W 的功率，距离交换机 100 米能提供 51W 功率，被称为「4PPoE」或「PoE++」；而后者 PSE 能提供 100W 的功率，距离交换机 100 米能提供 71W 功率，没有特殊称号。</li>
+</ul>
+<p>总之，PoE 的标准和命名有点乱。三个先后出台的标准加起来，定义了 <strong>1-4 四个等级的供电方式</strong>，分别能输出 <strong>15W、30W、60W、100W</strong> 的功率，而前三种方式，分别有别名 <strong>PoE、PoE+、4PPoE/PoE++</strong>。关于四个等级的更多细节，请看<a href="https://en.wikipedia.org/wiki/Power_over_Ethernet#Standard_implementation">这里</a>。</p>
+<h3 id="三种传输模式1">三种传输模式<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></h3>
+<p>PoE 有三种供电模式：</p>
+<ul>
+<li><strong>模式 B（alternative B 或 mode B）</strong>：对于 100Mbps 以太网而言，传输数据使用的是其中两对差分线（引脚 1、2、3、6），而模式 B 就用剩下空闲的两对线（引脚 4、5、7、8）来供电。</li>
+<li><strong>模式 A（alternative A 或 mode A）</strong>：这种方式下，使用引脚 1、2、3、6 来供电。无论何种速率的以太网，都会用这几个引脚来传输数据，因此模式 A 是将电力在数据线中传输。</li>
+<li><strong>4PPoE</strong>：使用全部的四对线进行电力输送。</li>
+</ul>
+<figure>
+    <img src="/d29f7647-f8e8-4dbf-98b3-f7df4df5daf1.jpg"/> <figcaption>
+            <h4>三种供电模式</h4>
+        </figcaption>
+</figure>
+
+<h3 id="使用现状">使用现状</h3>
+<p>经过了一点网上的简单调研，发现 PoE 主要还是用于一些简单的网络接入设备的供电，如路由器、IP 摄像头等，并且使用得也不是特别广泛。许多情境下，需要使用一个转接头，将同时携带信息和能量的网线，转换成只携带信息的网线和另一根电源线。</p>
+<figure>
+    <img src="/d5f493b8-ecd8-11ea-adc1-0242ac120002.jpg"/> <figcaption>
+            <h4>PoE 经过转接后给设备供网和供电</h4>
+        </figcaption>
+</figure>
+
+<p>使用 PoE 给笔记本电脑供电也不实际，完全没有使用 USB-PD 充电灵活性强。因为：</p>
+<ul>
+<li>USB 充电功率更高，能达到 100W，而 PoE 只有较新的 Type 4 可以在源端达到 100W；在经过网络的长距离传输后，功率已经打折扣。</li>
+<li>USB 充电仅需要一个电源和充电头即可，而 PoE 充电必须要交换机支持 PoE。</li>
+<li>USB 本身的其它功能很多，可以支持数据传输、显示，甚至用来提供网络，而以太网只能提供网络接入而已，而且以太网不是唯一的联网方式（还有无线）。</li>
+<li>USB 线的便携性比以太网线要好很多。</li>
+<li>许多新出的轻薄本已经没有以太网接口。</li>
+</ul>
+<p>综上，PoE 是一项有趣的技术，用于小型联网设备很不错。</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://en.wikipedia.org/wiki/Power_over_Ethernet#Standard_implementation">Power over Ethernet - Wikipedia</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://kb.netgear.com/zh_CN/209/%E4%BB%80%E4%B9%88%E6%98%AF-PoE-%E4%BB%A5%E5%A4%AA%E7%BD%91%E4%BE%9B%E7%94%B5">什么是 PoE？（以太网供电） | Answer | NETGEAR Support</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="https://zhuanlan.zhihu.com/p/89045111">干货 | PoE 供电是什么？一文全解读 - 知乎</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a href="https://www.ti.com.cn/zh-cn/power-management/power-over-ethernet-poe/overview.html">以太网供电 | 概述 | 电源 IC | 德州仪器 TI.com.cn</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Zyxir</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-09-02
+        <a href="https://github.com/zyxir/blog/commit/466e859200df4966d07d657e1f93cff40bd5a7ee" title="new post written">(466e859)</a>
+    </span>
+  </p>
+  <p class="copyright-item">
+      <span class="item-title">原始文档</span>
+      <span class="item-content"><a class="link-to-markdown" href="http://blog.ericzhuochen.com/post/power-over-ethernet/index.md" target="_blank">查看本文 Markdown 版本 »</a></span>
+    </p>
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0（知识共享署名-相同方式共享 4.0 国际许可协议）</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/poe/">PoE</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/serial-communication/">
+            <span class="next-text nav-default">关于串行通信的调研</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'xfI1LVbg7IsL1FID93j2fuJe-gzGzoHsz',
+        appKey: 'rNDYlHxuWjbSHyUT8X9cCNsk',
+        notify:  true ,
+        verify:  false ,
+        avatar:'mm',
+        placeholder: '说点什么吧...',
+        visitor:  false 
+    });
+  </script>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:zyxirchen@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://twitter.com/@ZyxirChen" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://github.com/zyxir" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/u/5754108207" class="iconfont icon-weibo" title="weibo"></a>
+  <a href="http://blog.ericzhuochen.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Zyxir</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js" integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js" integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin="anonymous"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "zh-cn".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-151679109-2', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>

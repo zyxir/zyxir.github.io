@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PoE on Zyxiria</title>
+    <link>http://blog.ericzhuochen.com/tags/poe/</link>
+    <description>Recent content in PoE on Zyxiria</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 02 Sep 2020 10:04:21 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.ericzhuochen.com/tags/poe/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Power Over Ethernet 笔记</title>
+      <link>http://blog.ericzhuochen.com/post/power-over-ethernet/</link>
+      <pubDate>Wed, 02 Sep 2020 10:04:21 +0800</pubDate>
+      
+      <guid>http://blog.ericzhuochen.com/post/power-over-ethernet/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://blog.ericzhuochen.com/1a88345c-908c-4ffb-9ca0-fd0d46895968.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Power over ethernet，即 PoE，是一种使用网线供电的技术。有了这项技术，可以通过一根网线为设备同时供电和传输数据。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
