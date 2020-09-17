@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.74.3 with theme even" />
+<meta name="generator" content="Hugo 0.75.1 with theme even" />
 
 
 <link rel="canonical" href="http://blog.ericzhuochen.com/post/matlab-utf8/" />
@@ -158,6 +158,11 @@
 </nav>
   </div>
 </div>
+  <div class="post-outdated">
+    <div class="hint">
+      <p>【注意】最后更新于 <span class="timeago" datetime="2020-08-10T23:45:51" title="August 10, 2020">August 10, 2020</span>，文中内容可能已过时，请谨慎使用。</p>
+    </div>
+  </div>
     <div class="post-content">
       <p>今天遇到了 Matlab 的中文编码问题，经过查询之后发现应该有许多人遇到了这个问题，可是网上能查到的相关文章只是抛出莫名其妙的解决方案，几乎都没有任何分析。在此我详细地分析了这个问题，以及其解决方案。</p>
 <p>大概两三周前，我在中文 Windows 10 上的 Matlab 中打开一份之前在 Linux 上写的 Matlab 代码，发现其中的中文居然全部成了乱码，那时我以为是 Windows 和 Linux 操作系统之间字符编码的问题，就没太在意。今天，我发现我在 Visual Studio Code 中写 Matlab 代码时，<code>mlint.exe</code> 程序（即 Matlab 的自动纠错程序）给出的 Warning 信息全都是乱码；而用 Matlab 打开同一份代码，代码中的中文也变成了乱码。此时我就意识到，这个问题值得探索了。</p>

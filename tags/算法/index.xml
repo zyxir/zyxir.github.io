@@ -6,11 +6,7 @@
     <description>Recent content in 算法 on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Aug 2020 14:19:17 +0800</lastBuildDate>
-    
-	<atom:link href="http://blog.ericzhuochen.com/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 11 Aug 2020 14:19:17 +0800</lastBuildDate><atom:link href="http://blog.ericzhuochen.com/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>图像拼接技术</title>
       <link>http://blog.ericzhuochen.com/post/image-mosaicing/</link>
