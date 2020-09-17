@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 02 Sep 2020 14:48:04 +0800</lastBuildDate><atom:link href="http://blog.ericzhuochen.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Sep 2020 22:17:28 +0800</lastBuildDate><atom:link href="http://blog.ericzhuochen.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python 加速计算的几个方法</title>
+      <link>http://blog.ericzhuochen.com/post/python-computing-accelarating/</link>
+      <pubDate>Thu, 17 Sep 2020 22:17:28 +0800</pubDate>
+      
+      <guid>http://blog.ericzhuochen.com/post/python-computing-accelarating/</guid>
+      <description>&lt;p&gt;这篇文章介绍我所知的一些提升 Python 的科学计算性能的办法。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>增量式编码器</title>
       <link>http://blog.ericzhuochen.com/post/incremental-encoder.md/</link>

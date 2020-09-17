@@ -6,7 +6,16 @@
     <description>Recent content in 计算机相关 on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Aug 2020 14:19:17 +0800</lastBuildDate><atom:link href="http://blog.ericzhuochen.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Sep 2020 22:17:28 +0800</lastBuildDate><atom:link href="http://blog.ericzhuochen.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python 加速计算的几个方法</title>
+      <link>http://blog.ericzhuochen.com/post/python-computing-accelarating/</link>
+      <pubDate>Thu, 17 Sep 2020 22:17:28 +0800</pubDate>
+      
+      <guid>http://blog.ericzhuochen.com/post/python-computing-accelarating/</guid>
+      <description>&lt;p&gt;这篇文章介绍我所知的一些提升 Python 的科学计算性能的办法。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>图像拼接技术</title>
       <link>http://blog.ericzhuochen.com/post/image-mosaicing/</link>

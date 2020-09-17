@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Python 加速计算的几个方法 - Zyxiria</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Zyxir" /><meta name="description" content="这篇文章介绍我所知的一些提升 Python 的科学计算性能的办法。
+" /><meta name="keywords" content="Zyxir, blog, Zyxiria" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.75.1 with theme even" />
+
+
+<link rel="canonical" href="http://blog.ericzhuochen.com/post/python-computing-accelarating/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.0034ec37b35f91907849c9020141a7e99249c6f2301ee1e34aee09cfe5f9ae2e.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Python 加速计算的几个方法" />
+<meta property="og:description" content="这篇文章介绍我所知的一些提升 Python 的科学计算性能的办法。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.ericzhuochen.com/post/python-computing-accelarating/" />
+<meta property="article:published_time" content="2020-09-17T22:17:28+08:00" />
+<meta property="article:modified_time" content="2020-09-17T23:08:44+08:00" />
+<meta itemprop="name" content="Python 加速计算的几个方法">
+<meta itemprop="description" content="这篇文章介绍我所知的一些提升 Python 的科学计算性能的办法。">
+<meta itemprop="datePublished" content="2020-09-17T22:17:28+08:00" />
+<meta itemprop="dateModified" content="2020-09-17T23:08:44+08:00" />
+<meta itemprop="wordCount" content="1194">
+
+
+
+<meta itemprop="keywords" content="Python,科学计算," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python 加速计算的几个方法"/>
+<meta name="twitter:description" content="这篇文章介绍我所知的一些提升 Python 的科学计算性能的办法。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Zyxiria</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/pages/">
+        <li class="mobile-menu-item">其它页面</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Zyxiria</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pages/">其它页面</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Python 加速计算的几个方法</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-09-17 </span>
+        <div class="post-category">
+            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3/"> 计算机相关 </a>
+            </div>
+          <span class="more-meta"> 约 1194 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#一多使用-numpy-库">一、多使用 NumPy 库</a></li>
+        <li><a href="#二操作系统很重要">二、操作系统很重要</a></li>
+        <li><a href="#三并行计算gpu-计算等">三、并行计算、GPU 计算等</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>这篇文章介绍我所知的一些提升 Python 的科学计算性能的办法。</p>
+<h2 id="一多使用-numpy-库">一、多使用 NumPy 库</h2>
+<p>Python 的列表用于处理数值计算十分低效，而 NumPy 库提供的各种运算函数，由于底层使用 C++ 实现，并且使用了一些向量与矩阵运算的加速技巧，运算速度比列表要快上不少。下面用一个例子来体现它们的速度差。</p>
+<p>这个 Python 脚本制造了一个长度为一百万的纯数字列表，将其所有的元素加 2，然后计算出之后的最小值，并且输出结果和运算所使用的总时间。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">time</span>
+
+<span class="c1"># Start ticking.</span>
+
+<span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+<span class="c1"># Define the array, and print its length.</span>
+
+<span class="n">array</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;The length of the array is &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">))</span>
+
+<span class="c1"># Increase each element by 2.</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)):</span>
+    <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">2</span>
+
+<span class="c1"># Find the minimum and print it.</span>
+
+<span class="nb">min</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;The minimum is &#39;</span><span class="p">,</span> <span class="nb">min</span><span class="p">)</span>
+
+<span class="c1"># Print the elapsed time.</span>
+
+<span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Elapsed time is &#39;</span><span class="p">,</span> <span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>输出的结果为：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">The length of the array is  1000000
+The minimum is  2
+Elapsed time is  0.12588071823120117
+</code></pre></td></tr></table>
+</div>
+</div><p>这说明它的运行大概要花费 0.12 秒。那么，如果稍微修改一下它，使用 NumPy 库的数组来替换原脚本中的列表，更新后的脚本如下（注意高亮的行）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="hl"><span class="lnt"> 2
+</span></span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="hl"><span class="lnt">10
+</span></span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="hl"><span class="lnt">15
+</span></span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="hl"><span class="lnt">19
+</span></span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">time</span>
+<span class="hl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+</span>
+<span class="c1"># Start ticking.</span>
+
+<span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+<span class="c1"># Define the array, and print its length.</span>
+
+<span class="hl"><span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1000000</span><span class="p">)</span>
+</span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;The length of the array is &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">))</span>
+
+<span class="c1"># Increase each element by 2.</span>
+
+<span class="hl"><span class="n">array</span> <span class="o">+=</span> <span class="mi">2</span>
+</span>
+<span class="c1"># Find the minimum and print it.</span>
+
+<span class="hl"><span class="nb">min</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+</span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;The minimum is &#39;</span><span class="p">,</span> <span class="nb">min</span><span class="p">)</span>
+
+<span class="c1"># Print the elapsed time.</span>
+
+<span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s1">&#39;Elapsed time is &#39;</span><span class="p">,</span> <span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>运行这个脚本，输出为：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">The length of the array is  1000000
+The minimum is  2
+Elapsed time is  0.002527952194213867
+</code></pre></td></tr></table>
+</div>
+</div><p>速度直接从 0.12 秒，提升到了 0.002 秒，对比已经非常明显了。虽然没人会直接去用 Python 原生列表去做科学计算，可是就我自己而言，有时候有些简单的小功能，为了图省事，可能就直接用列表去实现了。列表的低效叠加起来，可能就会给程序的运行效率带来许多负面影响。</p>
+<h2 id="二操作系统很重要">二、操作系统很重要</h2>
+<p>在我自己<strong>实际做项目</strong>的过程中，我注意到，在 Windows 和 Linux 上，Python 的计算效率有非常大的区别。我在<strong>同一台电脑</strong>（八代十二核 i7 处理器，16 GB 内存，集成显卡）上，安装了 Windows 10 和 Arch Linux 操作系统，但是在它们上分别运行一样的代码，速度能相差好几倍（大概是不到十倍，自己的粗略估计，没有精确计时对比）。因此，我现在<strong>只在 Linux 上跑 Python 计算了</strong>。但是，<strong>这只是个人经验</strong>。</p>
+<p>我也在搜索引擎上进行了一些调查，得到的结论是：<strong>Python 在 Linux 上的确比 Windows 要快很多，而且是 much faster，快得相当多</strong>（当然，许多网上的说法也只是基于经验），但是<strong>NumPy 在 Linux 上的性能并没有明显高于 Windows</strong>（参考<a href="https://numpy.org/doc/stable/reference/random/performance.html">官方的性能测试</a>）。</p>
+<p>我的 Arch Linux 是自己从最基本的命令行界面一点点“组装”起来的，哪怕和同为 Linux 的 Ubuntu 相比，它都要轻量许多，因此自然成了我跑计算程序的首选操作系统。</p>
+<p>我没有 mac 电脑，所以没有测试它的性能。有机会的话一定也要测试一下。</p>
+<h2 id="三并行计算gpu-计算等">三、并行计算、GPU 计算等</h2>
+<p>这一点感谢实验室的 ZK 师兄给我提供思路。可惜我对于这两点的理解都不够多，这里只能提供少许信息。</p>
+<p>并行计算，可以使用 <a href="https://docs.python.org/3/library/multiprocessing.html">Python 内置的 multiprocessing 包</a> 来实现。这里借用<a href="https://pymotw.com/2/multiprocessing/basics.html">这个网站</a>上的例子来展示它的基本用法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">multiprocessing</span>
+
+<span class="k">def</span> <span class="nf">worker</span><span class="p">():</span>
+    <span class="s2">&#34;&#34;&#34;worker function&#34;&#34;&#34;</span>
+    <span class="k">print</span> <span class="s1">&#39;Worker&#39;</span>
+    <span class="k">return</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">jobs</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">multiprocessing</span><span class="o">.</span><span class="n">Process</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">worker</span><span class="p">)</span>
+        <span class="n">jobs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">$ python multiprocessing_simple.py
+
+Worker
+Worker
+Worker
+Worker
+Worker
+</code></pre></td></tr></table>
+</div>
+</div><p>使用 GPU 做计算，是现在非常火的方向。这里仅提供一篇 <a href="https://developer.nvidia.com/how-to-cuda-python">NVIDIA 提供的在 Python 中使用 GPU 加速计算的教程</a>。</p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Zyxir</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-09-17
+        <a href="https://github.com/zyxir/blog/commit/29618a6768f68c77922f8428f4239403903c4a51" title="new post written">(29618a6)</a>
+    </span>
+  </p>
+  <p class="copyright-item">
+      <span class="item-title">原始文档</span>
+      <span class="item-content"><a class="link-to-markdown" href="http://blog.ericzhuochen.com/post/python-computing-accelarating/index.md" target="_blank">查看本文 Markdown 版本 »</a></span>
+    </p>
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0（知识共享署名-相同方式共享 4.0 国际许可协议）</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/python/">Python</a>
+          <a href="/tags/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/">科学计算</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/incremental-encoder.md/">
+            <span class="next-text nav-default">增量式编码器</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'xfI1LVbg7IsL1FID93j2fuJe-gzGzoHsz',
+        appKey: 'rNDYlHxuWjbSHyUT8X9cCNsk',
+        notify:  true ,
+        verify:  false ,
+        avatar:'mm',
+        placeholder: '说点什么吧...',
+        visitor:  false 
+    });
+  </script>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:zyxirchen@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://twitter.com/@ZyxirChen" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://github.com/zyxir" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/u/5754108207" class="iconfont icon-weibo" title="weibo"></a>
+  <a href="http://blog.ericzhuochen.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Zyxir</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js" integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js" integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin="anonymous"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "zh-cn".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-151679109-2', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>
