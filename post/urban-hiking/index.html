@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Some Concepts in Hardware Design - Zyxiria</title>
+  <title>城市徒步 - Zyxiria</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Zyxir" /><meta name="description" content="Concepts source: Quora A digital design consits of several HDL files that together form a so called toplevel, and modules. A design must be verified before translated into a target hardware. The toplevel design is called the RTL code (register-transfer level code) since it can be translated by a tool into a netlist (interconnection of basic cells, like flipflops and logic gates). Next to RTL, there is behavioural code (higher-level" /><meta name="keywords" content="Zyxir, blog, Zyxiria" />
+<meta name="author" content="Zyxir" /><meta name="description" content="过去，我是一个步行爱好者，但是也仅限步行一个小时左右能够抵达的地点。疫情期间，为了锻炼和解闷，我养成了用脚步丈量大地的习惯，单次步行的时间开始上升到两个小时以上。最近，我才知道这么做有另一个称呼——城市徒步（Urban Hiking）。
+" /><meta name="keywords" content="Zyxir, blog, Zyxiria" />
 
 
 
@@ -26,7 +27,7 @@
 <meta name="generator" content="Hugo 0.76.3 with theme even" />
 
 
-<link rel="canonical" href="http://blog.ericzhuochen.com/post/concepts-in-hardware-design/" />
+<link rel="canonical" href="http://blog.ericzhuochen.com/post/urban-hiking/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -39,24 +40,24 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Some Concepts in Hardware Design" />
-<meta property="og:description" content="Concepts source: Quora A digital design consits of several HDL files that together form a so called toplevel, and modules. A design must be verified before translated into a target hardware. The toplevel design is called the RTL code (register-transfer level code) since it can be translated by a tool into a netlist (interconnection of basic cells, like flipflops and logic gates). Next to RTL, there is behavioural code (higher-level" />
+<meta property="og:title" content="城市徒步" />
+<meta property="og:description" content="过去，我是一个步行爱好者，但是也仅限步行一个小时左右能够抵达的地点。疫情期间，为了锻炼和解闷，我养成了用脚步丈量大地的习惯，单次步行的时间开始上升到两个小时以上。最近，我才知道这么做有另一个称呼——城市徒步（Urban Hiking）。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.ericzhuochen.com/post/concepts-in-hardware-design/" />
-<meta property="article:published_time" content="2018-11-04T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-09-02T13:12:20+08:00" />
-<meta itemprop="name" content="Some Concepts in Hardware Design">
-<meta itemprop="description" content="Concepts source: Quora A digital design consits of several HDL files that together form a so called toplevel, and modules. A design must be verified before translated into a target hardware. The toplevel design is called the RTL code (register-transfer level code) since it can be translated by a tool into a netlist (interconnection of basic cells, like flipflops and logic gates). Next to RTL, there is behavioural code (higher-level">
-<meta itemprop="datePublished" content="2018-11-04T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-09-02T13:12:20+08:00" />
-<meta itemprop="wordCount" content="226">
+<meta property="og:url" content="http://blog.ericzhuochen.com/post/urban-hiking/" />
+<meta property="article:published_time" content="2020-10-11T15:16:59+08:00" />
+<meta property="article:modified_time" content="2020-10-11T22:16:24+08:00" />
+<meta itemprop="name" content="城市徒步">
+<meta itemprop="description" content="过去，我是一个步行爱好者，但是也仅限步行一个小时左右能够抵达的地点。疫情期间，为了锻炼和解闷，我养成了用脚步丈量大地的习惯，单次步行的时间开始上升到两个小时以上。最近，我才知道这么做有另一个称呼——城市徒步（Urban Hiking）。">
+<meta itemprop="datePublished" content="2020-10-11T15:16:59+08:00" />
+<meta itemprop="dateModified" content="2020-10-11T22:16:24+08:00" />
+<meta itemprop="wordCount" content="557">
 
 
 
-<meta itemprop="keywords" content="" />
+<meta itemprop="keywords" content="城市徒步," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Some Concepts in Hardware Design"/>
-<meta name="twitter:description" content="Concepts source: Quora A digital design consits of several HDL files that together form a so called toplevel, and modules. A design must be verified before translated into a target hardware. The toplevel design is called the RTL code (register-transfer level code) since it can be translated by a tool into a netlist (interconnection of basic cells, like flipflops and logic gates). Next to RTL, there is behavioural code (higher-level"/>
+<meta name="twitter:title" content="城市徒步"/>
+<meta name="twitter:description" content="过去，我是一个步行爱好者，但是也仅限步行一个小时左右能够抵达的地点。疫情期间，为了锻炼和解闷，我养成了用脚步丈量大地的习惯，单次步行的时间开始上升到两个小时以上。最近，我才知道这么做有另一个称呼——城市徒步（Urban Hiking）。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -127,12 +128,12 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Some Concepts in Hardware Design</h1>
+      <h1 class="post-title">城市徒步</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2018-11-04 </span>
+        <span class="post-time"> 2020-10-11 </span>
         <div class="post-category">
-            <a href="/categories/%E7%A1%AC%E4%BB%B6%E8%AE%BE%E8%AE%A1/"> 硬件设计 </a>
+            <a href="/categories/%E6%9D%82%E8%B0%88/"> 杂谈 </a>
             </div>
           <span class="more-meta">  </span>
           <span class="more-meta">  </span>
@@ -143,57 +144,17 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title"></h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#concepts">Concepts</a>
-          <ul>
-            <li><a href="#compilation">Compilation</a></li>
-            <li><a href="#elaboration">Elaboration</a></li>
-            <li><a href="#simulation">Simulation</a></li>
-            <li><a href="#tools">Tools</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
-  <div class="post-outdated">
-    <div class="hint">
-      <p><span class="timeago" datetime="2020-09-02T13:12:20" title="September 2, 2020">September 2, 2020</span></p>
-    </div>
-  </div>
     <div class="post-content">
-      <h2 id="concepts">Concepts</h2>
-<p><strong>source:</strong> <a href="https://www.quora.com/What-is-compilation-elaboration-and-simulation-in-VLSI">Quora</a></p>
-<ul>
-<li>A digital design consits of several HDL files that together form a so called toplevel, and modules.</li>
-<li>A design must be verified before translated into a target hardware.</li>
-<li>The toplevel design is called the <strong>RTL code</strong> (register-transfer level code) since it can be translated by a tool into a <strong>netlist</strong> (interconnection of basic cells, like flipflops and logic gates). Next to RTL, there is <strong>behavioural code</strong> (higher-level code that can’t be synthesized) as well.</li>
-<li>A testbench providing stimulus to the toplevel (<strong>DUT</strong>, design under test) and verifies that the outputs are as expected.</li>
-</ul>
-<h3 id="compilation">Compilation</h3>
-<ul>
-<li>Every language has a <strong>LRM</strong> (language reference manual) that defines the syntax that is valid.</li>
-<li>Both RTL and behavioural code need to be syntactically correct before elaboration.</li>
-<li>The compiler is in fact a parser that <strong>check every HDL files for syntax errors</strong>.</li>
-</ul>
-<h3 id="elaboration">Elaboration</h3>
-<ul>
-<li>A design is a bunch of files that connect to each other in a certain way.</li>
-<li>Elaboration <strong>checks if your design and testbench is connected up in the right way.</strong></li>
-</ul>
-<h3 id="simulation">Simulation</h3>
-<ul>
-<li>A synchronous design is always a combination of combinational logic (boolean algebra) and flipflops.</li>
-<li>A simulator executes the testbench code that applies stimulus to the RTL design. It can show a waveform.</li>
-</ul>
-<h3 id="tools">Tools</h3>
-<p>We need <strong>a compiler, an elaboration tool, a simulator and a waveform viewer</strong> for EDA (electronic design automation).</p>
-
+      <p>过去，我是一个步行爱好者，但是也仅限步行一个小时左右能够抵达的地点。疫情期间，为了锻炼和解闷，我养成了用脚步丈量大地的习惯，单次步行的时间开始上升到两个小时以上。最近，我才知道这么做有另一个称呼——城市徒步（Urban Hiking）。</p>
+<p>一般而言，徒步旅行（Hiking）是指在户外进行的、靠步行来移动的旅行活动。城市徒步，便是把这项活动的发生地点放在了城市里。城市里的<em>高度起伏很小</em>，<em>路面平整</em>，也有非常<em>便捷的交通和容易的补给</em>，那么在城市里徒步的意义何在呢？</p>
+<p>首先，城市徒步同样有锻炼效果。虽然没有户外的崎岖陡峭，但是仍然是一项长时间的耐力运动。</p>
+<p>其次，城市徒步的比户外徒步要安全得多。城市徒步不会有很多未知与危险，遇到困难也容易解决。</p>
+<p>第三个原因，也就是我选择城市徒步的主要原因，就是——它能让你更加了解、熟悉你所在的城市。</p>
+<p>疫情期间待在家乡时，我开始探索这个我待了十几年的小城。我发现，我其实并不了解它。亲自去走遍它的大街小巷，听听街坊行人的三言两语，用心感受每一个细节，你总能有新的收获，得到意料之外的惊喜。</p>
+<p>生活总是会需要一些新的东西来带来激情。如果你敢到目标不明确、精神涣散，有了空闲时间，只能沉浸在手机电脑中，或者在虚拟时间释放自己的多巴胺，那么你可能需要出去走走了。感受一段你原以为很熟悉的路程，给自己一些新的挑战。</p>
     </div>
 
     <div class="post-copyright">
@@ -204,13 +165,13 @@
   <p class="copyright-item">
     <span class="item-title"></span>
     <span class="item-content">
-        2020-09-02
-        <a href="https://github.com/zyxir/blog/commit/d1102efe2d9dee9b9a7b82d0643158913d862f67" title="category updated">(d1102ef)</a>
+        2020-10-11
+        <a href="https://github.com/zyxir/blog/commit/1cb13fbd14ec06e406bed04c2fea8c93f3e9be52" title="title changed">(1cb13fb)</a>
     </span>
   </p>
   <p class="copyright-item">
       <span class="item-title"></span>
-      <span class="item-content"><a class="link-to-markdown" href="http://blog.ericzhuochen.com/post/concepts-in-hardware-design/index.md" target="_blank"></a></span>
+      <span class="item-content"><a class="link-to-markdown" href="http://blog.ericzhuochen.com/post/urban-hiking/index.md" target="_blank"></a></span>
     </p>
   <p class="copyright-item">
     <span class="item-title"></span>
@@ -218,15 +179,13 @@
   </p>
 </div>
 <footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="/tags/%E5%9F%8E%E5%B8%82%E5%BE%92%E6%AD%A5/">城市徒步</a>
+          </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/spanish-rr-words/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">西班牙语中的弹舌音</span>
-            <span class="prev-text nav-mobile"></span>
-          </a>
-        <a class="next" href="/post/xitong-xuexi-shiyi-xuexi-digui-xuexi/">
-            <span class="next-text nav-default">系统学习，拾遗学习，递归学习</span>
+        
+        <a class="next" href="/post/python-computing-accelarating/">
+            <span class="next-text nav-default">Python 加速计算的几个方法</span>
             <span class="next-text nav-mobile"></span>
             <i class="iconfont icon-right"></i>
           </a>
