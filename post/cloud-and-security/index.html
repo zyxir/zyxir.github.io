@@ -41,23 +41,26 @@
 
 
 <meta property="og:title" content="云与安全" />
-<meta property="og:description" content="今年第一季度的时候，我成了 OneDrive 以及 Microsoft 365 套件的粉丝。如此高性价比、高用户体验、高颜值的服务，正好击中了刚刚打算不用 Linux 一段时间的我的心。但是，大约一个月前，我发现 OneDrive 的在线版网址打不开了，但是各种同步仍然可以进行。这就意味着，我在除了 Windows 之外的操作系统上，都无法在线预览或者下载我的文件了。这样下来，OneDrive 的作用直接大打折扣。" />
+<meta property="og:description" content="
+今年第一季度的时候，我成了 OneDrive 以及 Microsoft 365 套件的粉丝。如此高性价比、高用户体验、高颜值的服务，正好击中了刚刚打算不用 Linux 一段时间的我的心。但是，大约一个月前，我发现 OneDrive 的在线版网址打不开了，但是各种同步仍然可以进行。这就意味着，我在除了 Windows 之外的操作系统上，都无法在线预览或者下载我的文件了。这样下来，OneDrive 的作用直接大打折扣。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://blog.ericzhuochen.com/post/cloud-and-security/" />
 <meta property="article:published_time" content="2020-10-12T16:16:20+08:00" />
-<meta property="article:modified_time" content="2020-10-12T17:20:05+08:00" />
+<meta property="article:modified_time" content="2020-10-12T20:24:04+08:00" />
 <meta itemprop="name" content="云与安全">
-<meta itemprop="description" content="今年第一季度的时候，我成了 OneDrive 以及 Microsoft 365 套件的粉丝。如此高性价比、高用户体验、高颜值的服务，正好击中了刚刚打算不用 Linux 一段时间的我的心。但是，大约一个月前，我发现 OneDrive 的在线版网址打不开了，但是各种同步仍然可以进行。这就意味着，我在除了 Windows 之外的操作系统上，都无法在线预览或者下载我的文件了。这样下来，OneDrive 的作用直接大打折扣。">
+<meta itemprop="description" content="
+今年第一季度的时候，我成了 OneDrive 以及 Microsoft 365 套件的粉丝。如此高性价比、高用户体验、高颜值的服务，正好击中了刚刚打算不用 Linux 一段时间的我的心。但是，大约一个月前，我发现 OneDrive 的在线版网址打不开了，但是各种同步仍然可以进行。这就意味着，我在除了 Windows 之外的操作系统上，都无法在线预览或者下载我的文件了。这样下来，OneDrive 的作用直接大打折扣。">
 <meta itemprop="datePublished" content="2020-10-12T16:16:20+08:00" />
-<meta itemprop="dateModified" content="2020-10-12T17:20:05+08:00" />
-<meta itemprop="wordCount" content="2171">
+<meta itemprop="dateModified" content="2020-10-12T20:24:04+08:00" />
+<meta itemprop="wordCount" content="2447">
 
 
 
 <meta itemprop="keywords" content="云,数据安全," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="云与安全"/>
-<meta name="twitter:description" content="今年第一季度的时候，我成了 OneDrive 以及 Microsoft 365 套件的粉丝。如此高性价比、高用户体验、高颜值的服务，正好击中了刚刚打算不用 Linux 一段时间的我的心。但是，大约一个月前，我发现 OneDrive 的在线版网址打不开了，但是各种同步仍然可以进行。这就意味着，我在除了 Windows 之外的操作系统上，都无法在线预览或者下载我的文件了。这样下来，OneDrive 的作用直接大打折扣。"/>
+<meta name="twitter:description" content="
+今年第一季度的时候，我成了 OneDrive 以及 Microsoft 365 套件的粉丝。如此高性价比、高用户体验、高颜值的服务，正好击中了刚刚打算不用 Linux 一段时间的我的心。但是，大约一个月前，我发现 OneDrive 的在线版网址打不开了，但是各种同步仍然可以进行。这就意味着，我在除了 Windows 之外的操作系统上，都无法在线预览或者下载我的文件了。这样下来，OneDrive 的作用直接大打折扣。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -135,7 +138,7 @@
         <div class="post-category">
             <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8E%E8%BD%AF%E4%BB%B6/"> 计算机与软件 </a>
             </div>
-          <span class="more-meta"> 约 2171 字 </span>
+          <span class="more-meta"> 约 2447 字 </span>
           <span class="more-meta"> 预计阅读 5 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -152,6 +155,7 @@
         <li><a href="#云的缺点">云的缺点</a></li>
         <li><a href="#云的选取">云的选取</a></li>
         <li><a href="#全盘加密">全盘加密</a></li>
+        <li><a href="#linux-与云">Linux 与云</a></li>
       </ul>
     </li>
   </ul>
@@ -159,7 +163,8 @@
   </div>
 </div>
     <div class="post-content">
-      <p>今年第一季度的时候，我成了 OneDrive 以及 Microsoft 365 套件的粉丝。如此高性价比、高用户体验、高颜值的服务，正好击中了刚刚打算不用 Linux 一段时间的我的心。但是，大约一个月前，我发现 OneDrive 的<a href="https://onedrive.live.com">在线版网址</a>打不开了，但是各种同步仍然可以进行。这就意味着，我在除了 Windows 之外的操作系统上，都无法在线预览或者下载我的文件了。这样下来，OneDrive 的作用直接大打折扣。</p>
+      <p><img src="/86aae462-0925-48a8-94ae-cce551b8d7b8.png" alt=""></p>
+<p>今年第一季度的时候，我成了 OneDrive 以及 Microsoft 365 套件的粉丝。如此高性价比、高用户体验、高颜值的服务，正好击中了刚刚打算不用 Linux 一段时间的我的心。但是，大约一个月前，我发现 OneDrive 的<a href="https://onedrive.live.com">在线版网址</a>打不开了，但是各种同步仍然可以进行。这就意味着，我在除了 Windows 之外的操作系统上，都无法在线预览或者下载我的文件了。这样下来，OneDrive 的作用直接大打折扣。</p>
 <h2 id="云的重要性">云的重要性</h2>
 <p>OneDrive 在我心目中，可以算是残废了。为什么我一定需要一个云服务呢？</p>
 <p>我的室友告诉我（当然，很可能是他从其它地方看到或听说的），重要资料一定要多加备份：<strong>本机</strong>一份，<strong>移动硬盘</strong>一份，<strong>云端</strong>一份。可能每个人对于自己的数据的概念不同，但是我的数据对我而言是<strong>极度重要</strong>的。</p>
@@ -177,13 +182,16 @@
 <p>坚果云应该是国内同步云的一哥了，但是曾经我因为<em>它的 bugsome Linux client</em>和<em>糟糕的同步算法</em>而放弃了它。我的室友购买了它的会员，希望它现在变好了一些。</p>
 <p>Dropbox 应该是世界范围内的同步云老大，但是被墙了。我只能保证我 99% 的时间和设备拥有顺畅网络访问，而不是 100%，所以 Dropbox 被我排除在外。如果<em>不在乎网络问题</em>，或者<em>已肉身翻墙</em>的话，强烈建议 Dropbox，我曾经使用它时用户体验非常好。</p>
 <p>Google Drive 是谷歌家的同步云，我体验的时间很短，也被墙了，暂时没感受出什么优缺点。不过，安卓手机上的谷歌相册可以把照片备份到 Google Drive 上的免费空间里，就图这一点就值得给它一个赞。</p>
+<p>其它同步云，我没有使用过，也没有资格评价。</p>
 <h2 id="全盘加密">全盘加密</h2>
 <p><strong>以下内容涉及到许多 Linux 与文件系统的知识</strong></p>
 <p>Windows 使用的是 NTFS 系统，不能进行全盘加密，但是 Linux 可以使用 LUKS2 文件系统进行全盘加密，提供额外的安全性。全盘加密过的电脑，即使被盗，偷盗者也无法获取硬盘中的数据。我尝试过一小段时间全盘加密，但是很快放弃了。</p>
 <p>全盘加密的好处，自然是安全性了，但是也有坏处。首先，<em>开机会变得更麻烦，因为有一个输入密码来解密硬盘的额外步骤</em>；其次，<em>性能会收到略微影响</em>；第三，如果电脑真的故障了，修电脑的人多半没法打开与解密一个 LUKS2 文件系统的硬盘，必须要自己准备 Linux Live USB 之类的工具。思索之后，我认为，<em>我的数据固然重要，但被小偷获取也没什么大不了的，又没有什么商业机密</em>，因此放弃了这种麻烦的方式。</p>
 <p>随后，我选取了 <code>systemd-homed</code>。这是一个尚比较年轻的 systemd 服务，可以让用户创建便携的、加密的用户目录，也是我目前在使用的服务。它的优点是，可以顺畅地开机，正常地登录用户，而用户的登录密码，就是 LUKS2 加密的密码，这样，整个登录过程会<em>就像没有加密一样</em>；并且，用户目录的文件是<em>以一个镜像文件的形式存储</em>的，只有在用户登录时，这个镜像才会被挂载。如果需要重装或换机，把这个镜像文件移动到同样支持 <code>systemd-homed</code> 的新系统即可。</p>
 <p>这样做仍然有一点点麻烦的地方。首先，我的电脑是支持指纹识别的，但是由于指纹文件存储在用户目录中，导致<em>如果是刚刚开机，或者休眠过久，那么指纹登录就无法生效</em>。其次，如果电脑故障，想读取这个 LUKS2 加密的镜像家目录，需要另一台支持 <code>systemd-homed</code> 的电脑，也是很麻烦的。</p>
-<p>不过，用这么一点点麻烦换取额外的安全，我认为是可以接受的。</p>
+<p>使用不能顺畅指纹开机的麻烦，以及电脑故障/重装时难以取出数据的麻烦，换取加密级的文件安全性，我认为还是有点儿过头了。即使不使用 <code>systemd-homed</code>，仍然可以拷贝整个用户目录而获得便携性（甚至还要更快一点）。因此，我打算放弃这种方式。我需要怎么做呢？我得重装系统。我可以把目前的用户文件全部拷贝到家目录之外的位置（除了 <code>.identity</code> 之外，删除当前用户，然后用 <code>systemd-homed</code> 的 <code>homectl</code> 命令新建一个不加密的用户。</p>
+<h2 id="linux-与云">Linux 与云</h2>
+<p>当然，与云的联接也必不可少。只不过，Linux 上无法使用 OneDrive 与 iCloud 等云服务（OneDrive 通过某些工具也能实现，但是很麻烦，效果也不好）。现在我打算再次试用（我曾经不喜欢的）坚果云。</p>
     </div>
 
     <div class="post-copyright">
@@ -195,7 +203,7 @@
     <span class="item-title">上次更新</span>
     <span class="item-content">
         2020-10-12
-        <a href="https://github.com/zyxir/blog/commit/fc870c4e3b5154a0d76d702ef6b8bab10336c16e" title="updated">(fc870c4)</a>
+        <a href="https://github.com/zyxir/blog/commit/620275e6a50ab6a1729f64f94fe3442ca6074d51" title="new post">(620275e)</a>
     </span>
   </p>
   <p class="copyright-item">
