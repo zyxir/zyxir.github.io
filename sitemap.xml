@@ -3,28 +3,56 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/categories/</loc>
-    <lastmod>2020-10-11T22:16:24+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/</loc>
-    <lastmod>2020-10-11T22:16:24+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/</loc>
-    <lastmod>2020-10-11T22:16:24+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/</loc>
-    <lastmod>2020-10-11T22:16:24+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/tags/%E4%BA%91/</loc>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/post/cloud-and-security/</loc>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/tags/%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8/</loc>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8E%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -52,28 +80,21 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/python/</loc>
-    <lastmod>2020-09-17T23:08:44+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/python-computing-accelarating/</loc>
-    <lastmod>2020-09-17T23:08:44+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97/</loc>
-    <lastmod>2020-09-17T23:08:44+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ericzhuochen.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3/</loc>
-    <lastmod>2020-09-17T23:08:44+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -199,21 +220,21 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/%E5%9B%BE%E5%83%8F%E6%8B%BC%E6%8E%A5/</loc>
-    <lastmod>2020-09-02T13:12:20+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/image-mosaicing/</loc>
-    <lastmod>2020-09-02T13:12:20+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2020-09-02T13:12:20+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -283,35 +304,28 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/matlab/</loc>
-    <lastmod>2020-08-10T23:45:51+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/utf-8/</loc>
-    <lastmod>2020-08-10T23:45:51+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</loc>
-    <lastmod>2020-08-10T23:45:51+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/matlab-utf8/</loc>
-    <lastmod>2020-08-10T23:45:51+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ericzhuochen.com/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2020-08-10T23:45:51+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -339,21 +353,21 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/emacs/</loc>
-    <lastmod>2020-08-10T23:45:51+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/ideal-emacs-configuration/</loc>
-    <lastmod>2020-08-10T23:45:51+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/</loc>
-    <lastmod>2020-08-10T23:45:51+08:00</lastmod>
+    <lastmod>2020-10-12T17:20:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
