@@ -3,28 +3,49 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/categories/</loc>
-    <lastmod>2020-10-12T20:24:04+08:00</lastmod>
+    <lastmod>2020-10-13T10:42:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/</loc>
-    <lastmod>2020-10-12T20:24:04+08:00</lastmod>
+    <lastmod>2020-10-13T10:42:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/</loc>
-    <lastmod>2020-10-12T20:24:04+08:00</lastmod>
+    <lastmod>2020-10-13T10:42:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/</loc>
-    <lastmod>2020-10-12T20:24:04+08:00</lastmod>
+    <lastmod>2020-10-13T10:42:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/categories/%E6%9D%82%E8%B0%88/</loc>
+    <lastmod>2020-10-13T10:42:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/</loc>
+    <lastmod>2020-10-13T10:42:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/post/recent-minimalism-povs/</loc>
+    <lastmod>2020-10-13T10:42:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -66,13 +87,6 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/urban-hiking/</loc>
-    <lastmod>2020-10-11T22:16:24+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ericzhuochen.com/categories/%E6%9D%82%E8%B0%88/</loc>
     <lastmod>2020-10-11T22:16:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -199,13 +213,6 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/minimal-android-1.0/</loc>
-    <lastmod>2020-08-28T22:22:25+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ericzhuochen.com/tags/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/</loc>
     <lastmod>2020-08-28T22:22:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
