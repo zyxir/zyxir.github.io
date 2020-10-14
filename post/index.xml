@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 13 Oct 2020 08:49:22 +0800</lastBuildDate><atom:link href="http://blog.ericzhuochen.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Oct 2020 00:05:17 +0800</lastBuildDate><atom:link href="http://blog.ericzhuochen.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>鱼与熊掌不能兼得</title>
+      <link>http://blog.ericzhuochen.com/post/fish-and-bear-paw/</link>
+      <pubDate>Thu, 15 Oct 2020 00:05:17 +0800</pubDate>
+      
+      <guid>http://blog.ericzhuochen.com/post/fish-and-bear-paw/</guid>
+      <description>&lt;p&gt;今日尝试连接我新买的 HUAWEI FreeLace Pro（蓝牙耳机）与我的 Arch Linux 生产力机器，发现这款蓝牙耳机与 Linux 的配合还不是很好，Linux 居然无法将其识别为音频输入/输出设备。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>近日的几个极简主义观点</title>
       <link>http://blog.ericzhuochen.com/post/recent-minimalism-povs/</link>
