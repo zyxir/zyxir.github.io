@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ericzhuochen.com/post/matlab-double/</loc>
+    <lastmod>2020-11-12T17:38:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/post/</loc>
+    <lastmod>2020-11-12T17:38:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/</loc>
+    <lastmod>2020-11-12T17:38:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.ericzhuochen.com/categories/</loc>
     <lastmod>2020-10-15T01:02:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -16,13 +37,6 @@
   </url>
   
   <url>
-    <loc>http://blog.ericzhuochen.com/post/</loc>
-    <lastmod>2020-10-15T01:02:18+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.ericzhuochen.com/tags/</loc>
     <lastmod>2020-10-15T01:02:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -31,13 +45,6 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/tags/windows/</loc>
-    <lastmod>2020-10-15T01:02:18+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ericzhuochen.com/</loc>
     <lastmod>2020-10-15T01:02:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
