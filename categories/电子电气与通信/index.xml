@@ -6,7 +6,20 @@
     <description>Recent content in 电子电气与通信 on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 02 Sep 2020 14:48:04 +0800</lastBuildDate><atom:link href="http://blog.ericzhuochen.com/categories/%E7%94%B5%E5%AD%90%E7%94%B5%E6%B0%94%E4%B8%8E%E9%80%9A%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Dec 2020 15:53:16 +0800</lastBuildDate><atom:link href="http://blog.ericzhuochen.com/categories/%E7%94%B5%E5%AD%90%E7%94%B5%E6%B0%94%E4%B8%8E%E9%80%9A%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>三相电</title>
+      <link>http://blog.ericzhuochen.com/post/three-phase/</link>
+      <pubDate>Fri, 04 Dec 2020 15:53:16 +0800</pubDate>
+      
+      <guid>http://blog.ericzhuochen.com/post/three-phase/</guid>
+      <description>&lt;figure&gt;
+    &lt;img src=&#34;http://blog.ericzhuochen.com/c185d153-2e47-4f65-bc67-50547145eac3.jfif&#34; width=&#34;200&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;有时候，在机房或是实验室里，我们会看到这种有四个孔的插头，它就是三相电插头了。那么它到底是干什么的呢。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>增量式编码器</title>
       <link>http://blog.ericzhuochen.com/post/incremental-encoder.md/</link>

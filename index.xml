@@ -6,7 +6,29 @@
     <description>Recent content on Zyxiria</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 11 Nov 2020 19:50:57 +0800</lastBuildDate><atom:link href="http://blog.ericzhuochen.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Dec 2020 00:22:09 +0800</lastBuildDate><atom:link href="http://blog.ericzhuochen.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于防寒</title>
+      <link>http://blog.ericzhuochen.com/post/about-keeping-warm/</link>
+      <pubDate>Thu, 10 Dec 2020 00:22:09 +0800</pubDate>
+      
+      <guid>http://blog.ericzhuochen.com/post/about-keeping-warm/</guid>
+      <description>&lt;p&gt;作为一个想成为极简主义者的人，这个冬天我都在做各种调查和试验，来探究一个问题：怎样才是最&lt;strong&gt;极简&lt;/strong&gt;、同时&lt;strong&gt;具备护外活动能力&lt;/strong&gt;的寒冷天气&lt;strong&gt;服装&lt;/strong&gt;配置？在探究这个问题的过程中，我对于「防寒」这个话题，有了比以前更加深刻的认识。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>三相电</title>
+      <link>http://blog.ericzhuochen.com/post/three-phase/</link>
+      <pubDate>Fri, 04 Dec 2020 15:53:16 +0800</pubDate>
+      
+      <guid>http://blog.ericzhuochen.com/post/three-phase/</guid>
+      <description>&lt;figure&gt;
+    &lt;img src=&#34;http://blog.ericzhuochen.com/c185d153-2e47-4f65-bc67-50547145eac3.jfif&#34; width=&#34;200&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;有时候，在机房或是实验室里，我们会看到这种有四个孔的插头，它就是三相电插头了。那么它到底是干什么的呢。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Matlab 的 double 类型</title>
       <link>http://blog.ericzhuochen.com/post/matlab-double/</link>

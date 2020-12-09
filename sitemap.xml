@@ -1,5 +1,76 @@
-<?xml-stylesheet type="text/xsl" href="http://blog.ericzhuochen.com/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/categories/</loc>
+    <lastmod>2020-12-10T01:53:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/post/</loc>
+    <lastmod>2020-12-10T01:53:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/tags/</loc>
+    <lastmod>2020-12-10T01:53:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/</loc>
+    <lastmod>2020-12-10T01:53:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/post/about-keeping-warm/</loc>
+    <lastmod>2020-12-10T01:53:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/categories/%E6%9D%82%E8%B0%88/</loc>
+    <lastmod>2020-12-10T01:53:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/tags/%E9%98%B2%E5%AF%92/</loc>
+    <lastmod>2020-12-10T01:53:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/post/three-phase/</loc>
+    <lastmod>2020-12-04T17:43:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/tags/%E4%BE%9B%E7%94%B5/</loc>
+    <lastmod>2020-12-04T17:43:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ericzhuochen.com/categories/%E7%94%B5%E5%AD%90%E7%94%B5%E6%B0%94%E4%B8%8E%E9%80%9A%E4%BF%A1/</loc>
+    <lastmod>2020-12-04T17:43:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/matlab-double/</loc>
@@ -9,35 +80,7 @@
   </url>
   
   <url>
-    <loc>http://blog.ericzhuochen.com/post/</loc>
-    <lastmod>2020-11-12T17:38:28+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ericzhuochen.com/</loc>
-    <lastmod>2020-11-12T17:38:28+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ericzhuochen.com/categories/</loc>
-    <lastmod>2020-10-15T01:02:18+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.ericzhuochen.com/tags/linux/</loc>
-    <lastmod>2020-10-15T01:02:18+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ericzhuochen.com/tags/</loc>
     <lastmod>2020-10-15T01:02:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -67,13 +110,6 @@
   <url>
     <loc>http://blog.ericzhuochen.com/post/fish-and-bear-paw/</loc>
     <lastmod>2020-10-15T01:02:18+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ericzhuochen.com/categories/%E6%9D%82%E8%B0%88/</loc>
-    <lastmod>2020-10-13T10:42:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -157,13 +193,6 @@
   
   <url>
     <loc>http://blog.ericzhuochen.com/post/incremental-encoder.md/</loc>
-    <lastmod>2020-09-04T15:49:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.ericzhuochen.com/categories/%E7%94%B5%E5%AD%90%E7%94%B5%E6%B0%94%E4%B8%8E%E9%80%9A%E4%BF%A1/</loc>
     <lastmod>2020-09-04T15:49:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

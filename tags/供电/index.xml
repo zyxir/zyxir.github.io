@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>供电 on Zyxiria</title>
+    <link>http://blog.ericzhuochen.com/tags/%E4%BE%9B%E7%94%B5/</link>
+    <description>Recent content in 供电 on Zyxiria</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 04 Dec 2020 15:53:16 +0800</lastBuildDate><atom:link href="http://blog.ericzhuochen.com/tags/%E4%BE%9B%E7%94%B5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>三相电</title>
+      <link>http://blog.ericzhuochen.com/post/three-phase/</link>
+      <pubDate>Fri, 04 Dec 2020 15:53:16 +0800</pubDate>
+      
+      <guid>http://blog.ericzhuochen.com/post/three-phase/</guid>
+      <description>&lt;figure&gt;
+    &lt;img src=&#34;http://blog.ericzhuochen.com/c185d153-2e47-4f65-bc67-50547145eac3.jfif&#34; width=&#34;200&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;有时候，在机房或是实验室里，我们会看到这种有四个孔的插头，它就是三相电插头了。那么它到底是干什么的呢。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
