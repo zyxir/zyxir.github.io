@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Matlab 的 double 类型 - Zyxiria</title>
+  <title>三相电 - Zyxiria</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Zyxir" /><meta name="description" content="我曾一直以为，MATLAB 的 double 数据类型就是 C/C&#43;&#43; 中的 double 类型，即双精度浮点数，正如 MATLAB 和 C/C&#43;&#43; 中的 int 都是整数一样。直到不久前，我才发现并不是如此。
+<meta name="author" content="Zyxir" /><meta name="description" content="  有时候，在机房或是实验室里，我们会看到这种有四个孔的插头，它就是三相电插头了。那么它到底是干什么的呢。
 " /><meta name="keywords" content="Zyxir, blog, Zyxiria" />
 
 
@@ -27,7 +27,7 @@
 <meta name="generator" content="Hugo 0.76.5 with theme even" />
 
 
-<link rel="canonical" href="http://blog.ericzhuochen.com/post/matlab-double/" />
+<link rel="canonical" href="http://blog.ericzhuochen.com/post/three-phase/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -40,24 +40,36 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Matlab 的 double 类型" />
-<meta property="og:description" content="我曾一直以为，MATLAB 的 double 数据类型就是 C/C&#43;&#43; 中的 double 类型，即双精度浮点数，正如 MATLAB 和 C/C&#43;&#43; 中的 int 都是整数一样。直到不久前，我才发现并不是如此。" />
+<meta property="og:title" content="三相电" />
+<meta property="og:description" content="
+     
+
+
+有时候，在机房或是实验室里，我们会看到这种有四个孔的插头，它就是三相电插头了。那么它到底是干什么的呢。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.ericzhuochen.com/post/matlab-double/" />
-<meta property="article:published_time" content="2020-11-11T19:50:57+08:00" />
-<meta property="article:modified_time" content="2020-11-12T17:38:28+08:00" />
-<meta itemprop="name" content="Matlab 的 double 类型">
-<meta itemprop="description" content="我曾一直以为，MATLAB 的 double 数据类型就是 C/C&#43;&#43; 中的 double 类型，即双精度浮点数，正如 MATLAB 和 C/C&#43;&#43; 中的 int 都是整数一样。直到不久前，我才发现并不是如此。">
-<meta itemprop="datePublished" content="2020-11-11T19:50:57+08:00" />
-<meta itemprop="dateModified" content="2020-11-12T17:38:28+08:00" />
-<meta itemprop="wordCount" content="856">
+<meta property="og:url" content="http://blog.ericzhuochen.com/post/three-phase/" />
+<meta property="article:published_time" content="2020-12-04T15:53:16+08:00" />
+<meta property="article:modified_time" content="2020-12-04T17:43:08+08:00" />
+<meta itemprop="name" content="三相电">
+<meta itemprop="description" content="
+     
+
+
+有时候，在机房或是实验室里，我们会看到这种有四个孔的插头，它就是三相电插头了。那么它到底是干什么的呢。">
+<meta itemprop="datePublished" content="2020-12-04T15:53:16+08:00" />
+<meta itemprop="dateModified" content="2020-12-04T17:43:08+08:00" />
+<meta itemprop="wordCount" content="862">
 
 
 
-<meta itemprop="keywords" content="," />
+<meta itemprop="keywords" content="供电," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Matlab 的 double 类型"/>
-<meta name="twitter:description" content="我曾一直以为，MATLAB 的 double 数据类型就是 C/C&#43;&#43; 中的 double 类型，即双精度浮点数，正如 MATLAB 和 C/C&#43;&#43; 中的 int 都是整数一样。直到不久前，我才发现并不是如此。"/>
+<meta name="twitter:title" content="三相电"/>
+<meta name="twitter:description" content="
+     
+
+
+有时候，在机房或是实验室里，我们会看到这种有四个孔的插头，它就是三相电插头了。那么它到底是干什么的呢。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -128,14 +140,14 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Matlab 的 double 类型</h1>
+      <h1 class="post-title">三相电</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2020-11-11 </span>
+        <span class="post-time"> 2020-12-04 </span>
         <div class="post-category">
-            <a href="/categories//">  </a>
+            <a href="/categories/%E7%94%B5%E5%AD%90%E7%94%B5%E6%B0%94%E4%B8%8E%E9%80%9A%E4%BF%A1/"> 电子电气与通信 </a>
             </div>
-          <span class="more-meta"> 约 856 字 </span>
+          <span class="more-meta"> 约 862 字 </span>
           <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -148,9 +160,15 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#问题的发现">问题的发现</a></li>
-        <li><a href="#double-究竟是什么"><code>double</code> 究竟是什么</a></li>
-        <li><a href="#matlab-中的-double-的特殊性">MATLAB 中的 <code>double</code> 的特殊性</a></li>
+        <li><a href="#什么是三相电">什么是三相电</a></li>
+        <li><a href="#230v400v">230V/400V</a></li>
+        <li><a href="#三相电有什么优点">三相电有什么优点</a>
+          <ul>
+            <li><a href="#恒定的功率供给">恒定的功率供给</a></li>
+            <li><a href="#零线无电流">零线无电流</a></li>
+            <li><a href="#电源与电能传输方面的优点">电源与电能传输方面的优点</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -158,27 +176,78 @@
   </div>
 </div>
     <div class="post-content">
-      <p>我曾一直以为，MATLAB 的 <code>double</code> 数据类型就是 C/C++ 中的 <code>double</code> 类型，即双精度浮点数，正如 MATLAB 和 C/C++ 中的 <code>int</code> 都是整数一样。直到不久前，我才发现并不是如此。</p>
-<h2 id="问题的发现">问题的发现</h2>
-<p>几天前，我遇到一个问题，需要<strong>把一个字符串转换成整数</strong>。那时我已经知道了，把整数转换成字符串的函数是 <code>int2str()</code>，于是猜想，把字符串反过来转换成整数的函数应该是 <code>str2int()</code>，但是在 MATLAB 的幫助中搜索它，居然找不到。我索性在搜索框中输入 <code>str2</code> 几个字符，看看会弹出什么提示，于是就找到了 <code>str2num()</code> 函数。一想，也对，MATLAB 必竟是高级语言，应该会自动判断字符串是整数还是浮点数，所以就只需要一个函数了。</p>
-<p>但是，在使用 <code>str2num()</code> 函数转换字符串时，MATLAB 又提示我，「如果您要对标量值进行操作，请考虑使用 STR2DOUBLE 以提高性能」。这时我就疑惑了，我要转换出整数，可是 <code>str2double()</code> 听名字，应该只能转换出浮点数，这怎么能替换呢？</p>
-<p>再深入看一下 MATLAB 关于数据类型的文档，就可以得出答案。</p>
-<h2 id="double-究竟是什么"><code>double</code> 究竟是什么</h2>
-<p>MATLAB 的文档中对于 <code>double</code> 的介绍是：</p>
-<blockquote>
-<p>double is the <strong>default numeric data type (class) in MATLAB®</strong>, providing <strong>sufficient precision</strong> for most computational tasks. Numeric variables are automatically stored as <strong>64-bit (8-byte) double-precision floating-point</strong> values.</p>
-</blockquote>
-<p>从这两句话中我们可以获得这几个信息：</p>
-<ul>
-<li><code>double</code> 是 MATLAB 的默认数据类型。也就是说，不指明数据类型的赋值语句，例如 <code>a=3</code>、<code>b=[1 2 3]</code>，都是自动赋值为 <code>double</code> 类型的。</li>
-<li><code>double</code> 可以给大多数计算任务提供足够的精度。</li>
-<li><code>double</code> 类型是 64 比特，即 8 字节的双精度浮点数。</li>
-</ul>
-<p>这么看起来，<code>double</code> 不就根 C/C++ 中的双精度浮点数一样吗？但是，它与 C/C++ 中的浮点数的确有区别。</p>
-<h2 id="matlab-中的-double-的特殊性">MATLAB 中的 <code>double</code> 的特殊性</h2>
-<p>根据我的测试，MATLAB 中的 <code>double</code> 类型和 C/C++ 中的 <code>double</code> 类型的不同，主要体现在用来存放整数时的表现上。</p>
-<p>当 MATLAB 的 <code>double</code> 变量中存放一个整数值时，它会表现得和整数一模一样：它仍然可以像整数一样进行计算，并且结果也会像整数一样打印出来，不会有小数点；而 C/C++ 中的 <code>double</code> 变量，不管存放了什么，打印出来都会是有小数点的。MATLAB 中的 <code>double</code>，只要其中存储的是正整数，甚至可以当成数组下标来使用。</p>
-<p>这也是可以理解的，毕竟，MATLAB 是弱类型的，把数据类型弄得少一点、统一一点，可以方便使用，让用户可以把主要精力放在计算本身上。</p>
+      <figure>
+    <img src="/c185d153-2e47-4f65-bc67-50547145eac3.jfif" width="200"/> 
+</figure>
+
+<p>有时候，在机房或是实验室里，我们会看到这种有四个孔的插头，它就是三相电插头了。那么它到底是干什么的呢。</p>
+<h2 id="什么是三相电">什么是三相电</h2>
+<p>普通的家庭供电，供电的就是零线和火线两根线，其中零线作为零电位参考，而火线上则是携带了有效值为 220V、频率为 50Hz 的交流电。为了安全考虑，通常还有一根地线，连到大地深处。</p>
+<p>而三相电则有四根线，除了提供参考零电位的零线外，还有三根线。这三根线可以认为都是火线，因为它们上面传播的都是交流电，只是彼此之间有一个 $\frac{2\pi}3$ 的相位差。</p>
+<figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/3_phase_AC_waveform.svg/300px-3_phase_AC_waveform.svg.png"/> 
+</figure>
+
+<p>三根线的电势可以写作</p>
+<p>$$
+V_1 = V_P \sin(\theta)\\<br>
+V_2 = V_P \sin(\theta + \frac23 \pi)\\<br>
+V_3 = V_P \sin(\theta + \frac43 \pi)
+$$</p>
+<h2 id="230v400v">230V/400V</h2>
+<p>许多三相电系统是 230V/400V 系统，意为单相电压有效值为 230V，而两相之间的电压有效值为 400V。为什么是 400V 而不是 460V（230V 的两倍）呢？下面通过计算说明。</p>
+<p>对于单独一相电，以及两相电之间的电压，它们的交流有效值（又称为方均根值）分别为</p>
+<p>$$
+V_{1,\text{RMS}} = \sqrt{\frac{\int_0^{2\pi}V_1^2 d\theta}{2\pi}}\\<br>
+V_{12,\text{RMS}} = \sqrt{\frac{\int_0^{2\pi}(V_1 - V_2)^2 d\theta}{2\pi}}
+$$</p>
+<p>把上面的两个积分展开来计算</p>
+<p>$$
+\begin{align}
+\int_0^{2\pi} V_1^2 d\theta &amp;= \int_0^{2\pi} V_P^2 \sin^2(\theta) d\theta\\<br>
+&amp;= \frac12 V_P^2 \int_0^{2\pi} \left[ 1 - \cos(2\theta) \right] d\theta\\<br>
+&amp;= \pi V_P^2
+\end{align}
+$$
+$$
+\begin{align}
+\int_0^{2\pi} (V_1 - V_2)^2 d\theta &amp;= \int_0^{2\pi} V_P^2 \left[\sin(\theta) - \sin(\theta + \frac23 \pi)\right]^2 d\theta\\<br>
+&amp;= V_P^2 \int_0^{2\pi} \left( \sin\theta - \sin\theta\cos\frac43\pi - \cos\theta\sin\frac43\theta \right)^2 d\theta\\<br>
+&amp;= V_P^2 \int_0^{2\pi} \left( \frac32\sin\theta - \frac{\sqrt{3}}2\cos\theta \right)^2 d\theta\\<br>
+&amp;= V_P^2 \int_0^{2\pi} \left( \frac34 + \frac32\sin^2\theta - \frac{3\sqrt{3}}2\sin\theta\cos\theta \right) d\theta\\<br>
+&amp;= V_P^2 \int_0^{2\pi} \left( \frac32 - \frac34\cos 2\theta - \frac{3\sqrt{3}}4\sin 2\theta \right) d\theta\\<br>
+&amp;= 3\pi V_P^2
+\end{align}
+$$</p>
+<p>于是有</p>
+<p>$$
+V_{1,\text{RMS}} = \frac{\sqrt2}2 V_P \quad V_{12,\text{RMS}} = \frac{\sqrt6}2 V_P
+$$</p>
+<p>可以看到，两相之间的电压有效值是单相有效值的 $\sqrt3$ 倍，因此是 230V 与 400V。</p>
+<h2 id="三相电有什么优点">三相电有什么优点</h2>
+<p>三相电会存在，正是由于它相对于单相电来说有一些难以取代的优点。</p>
+<h3 id="恒定的功率供给">恒定的功率供给</h3>
+<p>对于一个阻性元件 $R$，三相电对其提供的瞬时功率为</p>
+<p>$$
+\begin{align}
+p &amp;= \frac{V_1^2 + V_2^2 + V_3^2}R\\<br>
+&amp;= \frac{V_P^2}R \left[ \sin^2\theta + \sin^2\left( \theta + \frac23\pi \right) + \sin^2\left( \theta + \frac43\pi \right) \right]\\<br>
+&amp;= \frac{3 V_P^2}{2 R}
+\end{align}
+$$</p>
+<p>这是一个恒定的值，而普通单相电的功率是会随着时间不断变化的。（虽然我暂时还想不通怎么用三个电压同时给一个电阻供电，但是维基百科上就是这么写的）</p>
+<h3 id="零线无电流">零线无电流</h3>
+<p>与上面一样的条件，可以计算出零线上的瞬时电流为</p>
+<p>$$
+\begin{align}
+i &amp;= \frac{V_1 + V_2 + V_3}R\\<br>
+&amp;= \frac{V_P}R \left[ \sin\theta + \sin\left( \theta + \frac23\pi \right) + \sin\left( \theta + \frac43\pi \right) \right]\\<br>
+&amp;= 0
+\end{align}
+$$</p>
+<p>相比之下，传统的单相电，电流是通过零线返回的。不过，只有当三根线的负载完全相同时（例如，三相发动机）才会有零电流。</p>
+<h3 id="电源与电能传输方面的优点">电源与电能传输方面的优点</h3>
+<p>三相电发电机构造简单，传输同样的功率时，三相电比单相电能更节约有色金属。</p>
     </div>
 
     <div class="post-copyright">
@@ -189,13 +258,13 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2020-11-12
-        <a href="https://github.com/zyxir/blog/commit/82126aa46208256d523075b388c80fd896f583c6" title="new post added">(82126aa)</a>
+        2020-12-04
+        <a href="https://github.com/zyxir/blog/commit/a581b551b2373e9df98398362b50a5122517d532" title="new post">(a581b55)</a>
     </span>
   </p>
   <p class="copyright-item">
       <span class="item-title">原始文档</span>
-      <span class="item-content"><a class="link-to-markdown" href="http://blog.ericzhuochen.com/post/matlab-double/index.md" target="_blank">查看本文 Markdown 版本 »</a></span>
+      <span class="item-content"><a class="link-to-markdown" href="http://blog.ericzhuochen.com/post/three-phase/index.md" target="_blank">查看本文 Markdown 版本 »</a></span>
     </p>
   <p class="copyright-item">
     <span class="item-title">许可协议</span>
@@ -204,16 +273,16 @@
 </div>
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags//"></a>
+          <a href="/tags/%E4%BE%9B%E7%94%B5/">供电</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/three-phase/">
+        <a class="prev" href="/post/about-keeping-warm/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">三相电</span>
+            <span class="prev-text nav-default">关于防寒</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
-        <a class="next" href="/post/fish-and-bear-paw/">
-            <span class="next-text nav-default">鱼与熊掌不能兼得</span>
+        <a class="next" href="/post/matlab-double/">
+            <span class="next-text nav-default">Matlab 的 double 类型</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -301,6 +370,14 @@
 
 
 <script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
 
 
 <script type="application/javascript">
